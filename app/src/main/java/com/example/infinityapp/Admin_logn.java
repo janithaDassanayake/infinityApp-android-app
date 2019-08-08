@@ -46,7 +46,7 @@ public class Admin_logn extends AppCompatActivity {
             Intent intent =new Intent(Admin_logn.this,MainActivity.class);
             startActivity(intent);
 
-        }else if((userName.equals("janith")) && (userPassword.equals("1234"))){
+        }else if((userName.equals("user")) && (userPassword.equals("1234"))){
 
             Intent intent =new Intent(Admin_logn.this,MainActivity.class);
             startActivity(intent);

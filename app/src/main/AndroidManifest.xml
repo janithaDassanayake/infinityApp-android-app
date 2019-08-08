@@ -9,26 +9,22 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".HomePage"></activity>
         <activity android:name=".Admin_logn">
-
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-        <activity android:name=".MainActivity"/>
+        <activity android:name=".MainActivity" />
         <activity android:name=".Insert_Activity" />
         <activity android:name=".Delete_user_activity" />
         <activity android:name=".Edit_user_activity" />
         <activity android:name=".Block_user_activity" />
         <activity android:name=".Text_user_activity" />
         <activity android:name=".Search_user_activity" />
-
-
         <activity android:name=".Infinity_Edit_profile_Activity" />
-
     </application>
 
 </manifest>
