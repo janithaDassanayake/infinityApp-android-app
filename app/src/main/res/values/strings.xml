@@ -13,4 +13,15 @@
     <string name="last_name">Last Name</string>
     <string name="user_name">User Name</string>
     <string name="add">Add</string>
+    <string name="reset">Reset</string>
+    <string name="staff_id">staff ID</string>
+    <string name="member_type">member type</string>
+    <string name="mobile_no">Mobile No</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="remove_staff">Remove staff</string>
+    <string name="edit_staff_details">Edit Staff details</string>
+    <string name="block_users">Block users</string>
+    <string name="search_users">search users</string>
+    <string name="feedbacks">Feedbacks</string>
+    <string name="add_staff">Add staff</string>
 </resources>
