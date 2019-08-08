@@ -24,4 +24,6 @@
     <string name="search_users">search users</string>
     <string name="feedbacks">Feedbacks</string>
     <string name="add_staff">Add staff</string>
+    <string name="no_of_attempts_remaining">No of attempts Remaining:</string>
+    <string name="forget_password">Forget password ?</string>
 </resources>

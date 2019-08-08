@@ -68,13 +68,29 @@
         android:layout_marginTop="8dp"
         android:layout_marginBottom="8dp"
         android:background="#0135C9"
-        android:text="Login with facebook"
+        android:text="Register"
         android:textColor="#ADFFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.89" />
+        app:layout_constraintVertical_bias="0.887" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="315dp"
+        android:layout_height="27dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+
+        android:text="@string/forget_password"
+        android:background="@null"
+        android:textColor="#ADFFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button4"
+        app:layout_constraintVertical_bias="0.333" />
 
     <TextView
         android:id="@+id/tvInfo"
@@ -82,7 +98,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:layout_marginBottom="8dp"
-        android:text="No of attempts Remaining:"
+        android:text="@string/no_of_attempts_remaining"
         android:textColor="#80CDDC39"
         android:textSize="12sp"
         app:layout_constraintBottom_toBottomOf="parent"

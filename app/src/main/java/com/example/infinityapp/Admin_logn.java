@@ -48,7 +48,12 @@ public class Admin_logn extends AppCompatActivity {
 
         }else if((userName.equals("user")) && (userPassword.equals("1234"))){
 
-            Intent intent =new Intent(Admin_logn.this,MainActivity.class);
+            Intent intent =new Intent(Admin_logn.this,HomePage.class);
+            startActivity(intent);
+
+        }else if((userName.equals("madmin")) && (userPassword.equals("1234"))){
+
+            Intent intent =new Intent(Admin_logn.this,MovieAdminPage.class);
             startActivity(intent);
 
         }else{
