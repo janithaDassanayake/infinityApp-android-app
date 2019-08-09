@@ -18,7 +18,7 @@
     <string name="member_type">member type</string>
     <string name="mobile_no">Mobile No</string>
     <string name="edit_profile">Edit Profile</string>
-    <string name="remove_staff">Remove staff</string>
+    <string name="remove_staff">Remove Users</string>
     <string name="edit_staff_details">Edit Staff details</string>
     <string name="block_users">Block users</string>
     <string name="search_users">search users</string>
@@ -30,4 +30,7 @@
     <string name="EditStaff">Edit Staff</string>
     <string name="AddStaff">Add Staff</string>
     <string name="NoData">No Data found</string>
+    <string name="BlockUser">Block Users</string>
+    <string name="FinDUSer">Find Users</string>
+    <string name="Find_user">Enter name of the user</string>
 </resources>
