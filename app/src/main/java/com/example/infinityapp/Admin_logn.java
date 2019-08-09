@@ -17,13 +17,15 @@ public class Admin_logn extends AppCompatActivity {
     private Button Login;
     private int counter = 3;
 
+     Button signup;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_admin_logn);
 
-
+        signup = findViewById(R.id.register);
         Name = (EditText)findViewById(R.id.etName);
         Password = (EditText)findViewById(R.id.etPassword);
         Info = (TextView)findViewById(R.id.tvInfo);
@@ -35,6 +37,20 @@ public class Admin_logn extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 validate(Name.getText().toString(), Password.getText().toString());
+            }
+        });
+    }
+
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+
+        signup.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Admin_logn.this, Mregister.class);
+                startActivity(intent);
             }
         });
     }
@@ -66,5 +82,9 @@ public class Admin_logn extends AppCompatActivity {
             }
         }
     }
+
+
+
+
 
 }

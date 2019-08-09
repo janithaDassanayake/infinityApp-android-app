@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MovieAdminPage"></activity>
+        <activity android:name=".Mregister"></activity>
+        <activity android:name=".MovieAdminPage" />
         <activity android:name=".HomePage" />
         <activity android:name=".Admin_logn">
             <intent-filter>
