@@ -19,6 +19,8 @@ public class Admin_logn extends AppCompatActivity {
 
      Button signup;
 
+     TextView forgotpassword;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,6 +28,7 @@ public class Admin_logn extends AppCompatActivity {
         setContentView(R.layout.activity_admin_logn);
 
         signup = findViewById(R.id.register);
+        forgotpassword=findViewById(R.id.forgot);
         Name = (EditText)findViewById(R.id.etName);
         Password = (EditText)findViewById(R.id.etPassword);
         Info = (TextView)findViewById(R.id.tvInfo);
@@ -50,6 +53,14 @@ public class Admin_logn extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(Admin_logn.this, Mregister.class);
+                startActivity(intent);
+            }
+        });
+
+        forgotpassword.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Admin_logn.this, mforgotpassword.class);
                 startActivity(intent);
             }
         });
