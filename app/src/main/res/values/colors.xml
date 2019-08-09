@@ -5,4 +5,10 @@
     <color name="colorAccent">#D81B60</color>
     <color name="addBtn">#2196F3</color>
     <color name="cancelBtn">#E91E47</color>
+    <color name="EditAdminPAge">#FFFFFF</color>
+    <color name="AddminText">#5CE9E0E0</color>
+    <color name="TopText">#B9E9E0E0</color>
+    <color name="EditText">#B9E9E0E0</color>
+    <color name="LessOppasiti_black">#95090505</color>
+
 </resources>

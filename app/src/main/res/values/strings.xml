@@ -27,4 +27,7 @@
     <string name="no_of_attempts_remaining">No of attempts Remaining:</string>
     <string name="forget_password">Forget password ?</string>
     <string name="Dont">Do you have an account? SIGN IN</string>
+    <string name="EditStaff">Edit Staff</string>
+    <string name="AddStaff">Add Staff</string>
+    <string name="NoData">No Data found</string>
 </resources>

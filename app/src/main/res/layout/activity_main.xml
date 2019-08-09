@@ -8,7 +8,7 @@
     tools:context=".MainActivity">
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/EditProfilebtn"
         android:layout_width="135dp"
         android:layout_height="37dp"
         android:layout_marginStart="8dp"
@@ -17,6 +17,7 @@
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginBottom="8dp"
+        android:background="@color/addBtn"
         android:text="@string/edit_profile"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -41,8 +42,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.394"
-        app:srcCompat="@drawable/d"
-        />
+        app:srcCompat="@drawable/d" />
 
     <ImageButton
         android:id="@+id/imageButton2"
@@ -148,10 +148,10 @@
 
     <TextView
         android:id="@+id/textView16"
-        android:layout_width="wrap_content"
-        android:layout_height="13dp"
-        android:layout_marginStart="60dp"
-        android:layout_marginLeft="60dp"
+        android:layout_width="106dp"
+        android:layout_height="18dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginLeft="56dp"
         android:layout_marginBottom="24dp"
         android:text="@string/edit_staff_details"
         app:layout_constraintBottom_toTopOf="@+id/imageButton5"
