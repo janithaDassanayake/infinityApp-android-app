@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/pic1"
+    tools:context=".userEditProfile">
+
+    <TextView
+        android:id="@+id/editbtn2"
+        android:layout_width="196dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="108dp"
+        android:layout_marginLeft="108dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="107dp"
+        android:layout_marginRight="107dp"
+        android:gravity="center"
+        android:text="EDIT PROFILE"
+        android:textColor="@android:color/background_light"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="346dp"
+        android:layout_height="540dp"
+        android:layout_marginStart="42dp"
+        android:layout_marginLeft="42dp"
+        android:layout_marginTop="41dp"
+        android:layout_marginEnd="43dp"
+        android:layout_marginRight="43dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editbtn2">
+
+        <TextView
+            android:id="@+id/efname"
+            android:layout_width="325dp"
+            android:layout_height="37dp"
+            android:layout_marginStart="1dp"
+            android:layout_marginLeft="1dp"
+            android:layout_marginEnd="3dp"
+            android:layout_marginRight="3dp"
+            android:layout_marginBottom="9dp"
+            android:text="Malidi"
+            android:textColor="#CDFFE2E2"
+            app:layout_constraintBottom_toTopOf="@+id/elname"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/elname"
+            android:layout_width="0dp"
+            android:layout_height="38dp"
+            android:layout_marginStart="1dp"
+            android:layout_marginLeft="1dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="2dp"
+            android:layout_marginRight="2dp"
+            android:text="Wageesha"
+            android:textColor="#CBFFFFFF"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/efname" />
+
+        <EditText
+            android:id="@+id/eusername"
+            android:layout_width="0dp"
+            android:layout_height="41dp"
+            android:layout_marginTop="16dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="maali"
+            android:textColor="#CBFFFFFF"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/elname" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="339dp"
+            android:layout_height="33dp"
+            android:layout_marginStart="1dp"
+            android:layout_marginLeft="1dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="2dp"
+            android:layout_marginRight="2dp"
+            android:layout_marginBottom="10dp"
+            android:text="malidiwageesha8@gmail.com"
+            android:textColor="#CBFFFFFF"
+            app:layout_constraintBottom_toTopOf="@+id/ephone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/eusername" />
+
+        <EditText
+            android:id="@+id/ephone"
+            android:layout_width="0dp"
+            android:layout_height="43dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="2dp"
+            android:layout_marginRight="2dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="0773456930"
+            android:textColor="#CDFFFFFF"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+        <TextView
+            android:id="@+id/egender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="13dp"
+            android:layout_marginRight="13dp"
+            android:layout_marginBottom="59dp"
+            android:text="Gender"
+            android:textColor="#CBFFFFFF"
+            app:layout_constraintBottom_toTopOf="@+id/epassword1"
+            app:layout_constraintEnd_toStartOf="@+id/emale"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ephone"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <RadioButton
+            android:id="@+id/emale"
+            android:layout_width="112dp"
+            android:layout_height="31dp"
+            android:layout_marginEnd="17dp"
+            android:layout_marginRight="17dp"
+            android:layout_marginBottom="24dp"
+            android:text="Male"
+            android:textColor="#CDFFFFFF"
+            app:layout_constraintBottom_toTopOf="@+id/epassword1"
+            app:layout_constraintEnd_toStartOf="@+id/efemale" />
+
+        <RadioButton
+            android:id="@+id/efemale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="17dp"
+            android:layout_marginRight="17dp"
+            android:text="Female"
+            android:textColor="#CBFFFFFF"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ephone" />
+
+        <EditText
+            android:id="@+id/epassword1"
+            android:layout_width="338dp"
+            android:layout_height="43dp"
+            android:layout_marginTop="22dp"
+            android:layout_marginEnd="1dp"
+            android:layout_marginRight="1dp"
+            android:layout_marginBottom="23dp"
+            android:ems="10"
+            android:inputType="textPassword"
+            android:text="12345"
+            android:textColor="#CDFFFFFF"
+            app:layout_constraintBottom_toTopOf="@+id/epassword2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.142"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/efemale" />
+
+        <EditText
+            android:id="@+id/epassword2"
+            android:layout_width="324dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="2dp"
+            android:layout_marginRight="2dp"
+            android:ems="10"
+            android:inputType="textPassword"
+            android:text="12345"
+            android:textColor="#CDFFFFFF"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.25"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/epassword1" />
+
+        <Button
+            android:id="@+id/updatebtn"
+            android:layout_width="160dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginBottom="28dp"
+            android:background="#FF2D48A6"
+            android:clickable="true"
+            android:text="UPDATE"
+            android:textColor="#CBFFFFFF"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/deletebtn"
+            android:layout_width="160dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="76dp"
+            android:layout_marginLeft="76dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginBottom="28dp"
+            android:background="#FF2D48A6"
+            android:clickable="true"
+            android:text="DELETE"
+            android:textColor="#CBFFFFFF"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.726"
+            app:layout_constraintStart_toEndOf="@+id/updatebtn" />
+
+        <Button
+            android:id="@+id/changebtn1"
+            android:layout_width="65dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginBottom="16dp"
+            android:background="#FF2D48A6"
+            android:text="Change"
+            android:textColor="#CBD3D8EB"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="@+id/eusername"
+            app:layout_constraintEnd_toEndOf="@+id/eusername"
+            app:layout_constraintHorizontal_bias="0.923"
+            app:layout_constraintStart_toStartOf="@+id/eusername" />
+
+        <Button
+            android:id="@+id/changebtn2"
+            android:layout_width="65dp"
+            android:layout_height="30dp"
+            android:layout_marginBottom="20dp"
+            android:background="#FF2D48A6"
+            android:text="change"
+            android:textColor="#CDFFFFFF"
+            app:layout_constraintBottom_toTopOf="@+id/ephone"
+            app:layout_constraintEnd_toEndOf="@+id/textView4"
+            app:layout_constraintHorizontal_bias="0.963"
+            app:layout_constraintStart_toStartOf="@+id/textView4" />
+
+        <Button
+            android:id="@+id/changebtn3"
+            android:layout_width="65dp"
+            android:layout_height="30dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="12dp"
+            android:background="#FF2D48A6"
+            android:text="CHANGE"
+            android:textColor="#CBFFFFFF"
+            app:layout_constraintBottom_toBottomOf="@+id/epassword1"
+            app:layout_constraintEnd_toEndOf="@+id/epassword1"
+            app:layout_constraintHorizontal_bias="0.977"
+            app:layout_constraintStart_toStartOf="@+id/epassword1" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

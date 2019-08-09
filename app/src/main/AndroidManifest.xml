@@ -9,7 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".mforgotpassword2"></activity>
+        <activity android:name=".MuserMyaccount"></activity>
+        <activity android:name=".userEditProfile" />
+        <activity android:name=".mforgotpassword2" />
         <activity android:name=".mforgotpassword" />
         <activity android:name=".Mregister" />
         <activity android:name=".MovieAdminPage" />
