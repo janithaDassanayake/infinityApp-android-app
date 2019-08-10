@@ -70,7 +70,7 @@
     <string name="m_econpassword">12345</string>
     <string name="m_update">UPDATE</string>
     <string name="m_delete">DELETE</string>
-    <string name="m_forgotpassword">FORGOT YOUR PASSWORD?</string>
+    <string name="m_forgotpass">FORGOT YOUR PASSWORD?</string>
     <string name="m_sendbtn">SEND</string>
     <string name="m_newpassword">NEW PASSWORD</string>
     <string name="m_femail2" />
