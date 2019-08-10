@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">InfinityStudioMovieAdministrator</string>
+    <string name="tharikrizan">tharikrizan</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="user_name">User Name</string>
+    <string name="email">Email</string>
+    <string name="tharikrizan_yahoo_com">tharikrizan@yahoo.com</string>
+    <string name="contact">Contact</string>
+    <string name="_0767936896">0767936896</string>
+    <string name="password">Password</string>
+    <string name="_1_1212fddt">1@1212fdDT</string>
+    <string name="insert_movie_form">Insert Movie Form</string>
+    <string name="horror">Horror</string>
+    <string name="movie_type">Movie Type</string>
+    <string name="_2_hrs_15_min">2 hrs 15 min</string>
+    <string name="commedy">Commedy</string>
+    <string name="button">Button</string>
+    <string name="infinity_studos">Infinity Studos</string>
+    <string name="runningtime">RunningTime</string>
+    <string name="production">Production</string>
+    <string name="avenger_end_game">Avenger End Game</string>
+    <string name="action">Action</string>
+    <string name="movie_name">Movie Name</string>
+    <string name="mov123">mov123</string>
+    <string name="language">Language</string>
+    <string name="english">English</string>
+    <string name="movie_id">Movie Id</string>
+    <string name="sinhala">Sinhala</string>
+    <string name="tamil">Tamil</string>
+    <string name="delete_form">Delete Form</string>
+    <string name="save_edit">Save Edit</string>
+    <string name="insert_movie_button">Insert Movie</string>
+    <string name="movies">MOVIES</string>
+    <string name="anabella">Anabella</string>
+    <string name="purchase_tickets">Purchase Tickets</string>
+    <string name="now_showing">Now Showing</string>
+    <string name="coming_soon">Coming soon</string>
+    <string name="profile">profile</string>
+</resources>

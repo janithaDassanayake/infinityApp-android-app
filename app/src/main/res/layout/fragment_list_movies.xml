@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#B83737"
+    tools:context=".listMovies">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <TextView
+                    android:id="@+id/textView_movieId_listMovies"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/movie_id"
+                    android:textStyle="bold|italic" />
+
+                <TextView
+                    android:id="@+id/textViewMovieName_listMovies"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="#4CAF50"
+                    android:text="@string/movie_name"
+                    android:textStyle="bold|italic" />
+
+                <TextView
+                    android:id="@+id/textViewProduction_listMovies"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="@string/production"
+                    android:textStyle="bold|italic" />
+
+                <TextView
+                    android:id="@+id/textView_movieType_listMovies"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#4CAF50"
+                    android:text="@string/movie_type" />
+
+                <TextView
+                    android:id="@+id/textView_language_listMovies"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/language" />
+
+                <TextView
+                    android:id="@+id/textViewrunningTime_listmovies"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#4CAE50"
+                    android:text="@string/runningtime"
+                    android:textSize="13sp" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </TableLayout>
+    </LinearLayout>
+</FrameLayout>

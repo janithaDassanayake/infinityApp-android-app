@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".profileEditFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#D6D3B7"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView_editForm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:capitalize="words"
+            android:text="Edit Profile Form"
+            android:textSize="50sp" />
+
+        <TextView
+            android:id="@+id/textView_blank"
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:background="#071A83" />
+
+        <TextView
+            android:id="@+id/textView_uname_editProfle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/user_name"
+            android:textSize="30sp"
+            android:textStyle="bold|italic" />
+
+        <EditText
+            android:id="@+id/editText_uname_editProfile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/user_name"
+            android:inputType="textPersonName"
+            android:textColor="#4CAF50"
+            android:textSize="24sp"
+            android:textStyle="bold|italic" />
+
+        <TextView
+            android:id="@+id/textView_email_editProfile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/email"
+            android:textSize="30sp"
+            android:textStyle="bold|italic" />
+
+        <EditText
+            android:id="@+id/editText_email_editProfile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/tharikrizan_yahoo_com"
+            android:inputType="textEmailAddress"
+            android:textColor="#4CAF50"
+            android:textSize="24sp"
+            android:textStyle="bold|italic" />
+
+        <TextView
+            android:id="@+id/textView_contact_editProf"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/contact"
+            android:textSize="30sp"
+            android:textStyle="bold|italic" />
+
+        <EditText
+            android:id="@+id/editText_contact_editProfile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="07x xxxxxxx"
+            android:inputType="phone"
+            android:textColor="#4CAF50"
+            android:textSize="24sp"
+            android:textStyle="bold|italic" />
+
+        <TextView
+            android:id="@+id/textViewPassword_editProfile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/password"
+            android:textSize="30sp"
+            android:textStyle="bold|italic" />
+
+        <EditText
+            android:id="@+id/editText_Password_editProfile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="1@wsderTA"
+            android:inputType="textPassword" />
+
+        <Button
+            android:id="@+id/button_submit_editProfile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#141414"
+            android:text="Submit"
+            android:textColor="#09CAE2"
+            android:textSize="30sp"
+            android:textStyle="bold|italic" />
+    </LinearLayout>
+    </ScrollView>
+</FrameLayout>

@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D8AC6B"
+    tools:context=".insertMovieFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView_InsertMoviesForm_insertMovies"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#3F51B5"
+            android:text="@string/insert_movie_form"
+            android:textSize="50sp"
+            android:textStyle="bold|italic" />
+
+        <TextView
+            android:id="@+id/textView_InsertMovies_insertMovies"
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:background="#F44336" />
+
+        <TextView
+            android:id="@+id/textView_movieId_InsertMovie"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/movie_id"
+            android:textSize="18sp"
+            android:textStyle="bold|italic" />
+
+        <EditText
+            android:id="@+id/editText_movieID_InsertMovie"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/mov123"
+            android:inputType="textPersonName"
+            android:textColor="#4CAF50"
+            android:textColorHint="#4CAF50"
+            android:textSize="18sp"
+            android:textStyle="bold|italic" />
+
+        <TextView
+            android:id="@+id/textView_movieName_InsertMovie"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/movie_name"
+            android:textSize="18sp"
+            android:textStyle="bold|italic" />
+
+        <EditText
+            android:id="@+id/editText_movieName_InsertMovie"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/avenger_end_game"
+            android:inputType="textPersonName"
+            android:textColorHint="#4CAF50"
+            android:textSize="18sp"
+            android:textStyle="bold|italic" />
+
+        <TextView
+            android:id="@+id/textView_Production_InsertMovies"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/production"
+            android:textSize="30sp"
+            android:textStyle="bold|italic" />
+
+        <EditText
+            android:id="@+id/editText_production_InsertMovie"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/infinity_studos"
+            android:inputType="textPersonName"
+            android:textColorHint="#4CAF50"
+            android:textSize="18sp"
+            android:textStyle="bold|italic" />
+
+        <TextView
+            android:id="@+id/textView_runningTime_InsertMovie"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/runningtime"
+            android:textSize="18sp"
+            android:textStyle="bold|italic" />
+
+        <EditText
+            android:id="@+id/editText_runningTime_insertMovies"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/_2_hrs_15_min"
+            android:inputType="textPersonName"
+            android:textColor="#4CAF50"
+            android:textSize="18sp"
+            android:textStyle="bold|italic" />
+
+        <TextView
+            android:id="@+id/textView_movieType_insertMovie"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/movie_type"
+            android:textSize="18sp"
+            android:textStyle="bold|italic" />
+
+        <CheckBox
+            android:id="@+id/checkBox_horror_InsertMovie"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/horror"
+            android:textStyle="bold|italic" />
+
+        <CheckBox
+            android:id="@+id/checkBox_commedy_InsertMovie"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/commedy"
+            android:textStyle="bold|italic" />
+
+        <CheckBox
+            android:id="@+id/checkBox_action_InsertMovie"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/action" />
+
+        <TextView
+            android:id="@+id/textViewLanguage_InsertMovies"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/language"
+            android:textSize="18sp"
+            android:textStyle="bold|italic" />
+
+        <RadioGroup
+            android:id="@+id/RadioGroup_insertMovies"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checkedButton="@id/radioButton_English_editMovies">
+
+            <RadioButton
+                android:id="@+id/radioButton_English_InsertMovies"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/english" />
+
+            <RadioButton
+                android:id="@+id/radioButtonSinhala_InsertMovies"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/sinhala" />
+
+            <RadioButton
+                android:id="@+id/radioButtonTamil_InsertMovies"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/tamil" />
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/button_InsertMovie_InsertMovie"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/insert_movie_button"
+            android:textColor="#4CAF50"
+            android:textSize="18sp"
+            android:textStyle="bold|italic" />
+    </LinearLayout>
+    </ScrollView>
+</FrameLayout>
