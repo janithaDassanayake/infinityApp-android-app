@@ -10,6 +10,7 @@ import android.widget.Button;
 public class MuserMyaccount extends AppCompatActivity {
 
     Button btn;
+    Button sign;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -18,6 +19,7 @@ public class MuserMyaccount extends AppCompatActivity {
 
 
         btn=findViewById(R.id.edtbtn);
+        sign = findViewById(R.id.signout);
     }
 
 
@@ -34,5 +36,17 @@ public class MuserMyaccount extends AppCompatActivity {
                 startActivity(i);
             }
         });
+
+        sign.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                Intent i=new Intent(MuserMyaccount.this,Admin_logn.class);
+
+                startActivity(i);
+            }
+        });
+
+
     }
 }
