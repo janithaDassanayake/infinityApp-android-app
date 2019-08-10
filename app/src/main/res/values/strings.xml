@@ -33,4 +33,54 @@
     <string name="BlockUser">Block Users</string>
     <string name="FinDUSer">Find Users</string>
     <string name="Find_user">Enter name of the user</string>
+
+
+    <!--Malidi's resources files -->
+
+    <string name="m_lastname">Enter Your Last Name</string>
+    <string name="m_register">REGISTER</string>
+    <string name="m_firstname">Enter Your First Name</string>
+    <string name="m_username">Enter Your User Name</string>
+    <string name="m_email">Enter Your E-mail</string>
+    <string name="m_mobile">Enter Your Mobile(07********)</string>
+    <string name="m_gender">Gender</string>
+    <string name="m_male">Male</string>
+    <string name="m_female">Female</string>
+    <string name="m_password">Enter Your Password</string>
+    <string name="m_confirmpassword">Confirm Your Password</string>
+    <string name="m_registernow">REGISTER NOW</string>
+    <string name="m_myaccount">MY ACCOUNT</string>
+    <string name="m_editbtn">EDIT PROFILE</string>
+    <string name="m_purchasehistory">My Purchase History</string>
+    <string name="m_purchasenot">Purchase not available</string>
+    <string name="m_signout">SIGN OUT</string>
+    <string name="m_editprofile">EDIT PROFILE</string>
+    <string name="m_displayname">Malidi</string>
+    <string name="m_displaylname">Wageesha</string>
+    <string name="m_displayuname">maali</string>
+    <string name="m_changebtn1">CHANGE</string>
+    <string name="m_displaymail">malidiwageesha8@gmail.com</string>
+    <string name="m_displaymobile">0773456930</string>
+    <string name="m_displaygender">Gender</string>
+    <string name="m_displaymale">Male</string>
+    <string name="m_displayfemale">Female</string>
+    <string name="m_epassword">12345</string>
+    <string name="m_changebtn2">CHANGE</string>
+    <string name="m_chnagebtn3">CHANGE</string>
+    <string name="m_econpassword">12345</string>
+    <string name="m_update">UPDATE</string>
+    <string name="m_delete">DELETE</string>
+    <string name="m_forgotpass">FORGOT YOUR PASSWORD?</string>
+    <string name="m_sendbtn">SEND</string>
+    <string name="m_newpassword">NEW PASSWORD</string>
+    <string name="m_femail2" />
+    <string name="m_fnewpassword">Enter New Password</string>
+    <string name="m_fconfirmpassword">Confirm New Password</string>
+    <string name="m_resetpassword">RESET PASSWORD</string>
+    <string name="m_enter_email">enter your email</string>
+
+
 </resources>
+
+
+
