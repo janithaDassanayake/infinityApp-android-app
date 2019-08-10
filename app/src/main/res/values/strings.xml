@@ -1,0 +1,54 @@
+<resources>
+    <string name="app_name">InfinityApp</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="select_date">SELECT DATE</string>
+    <string name="the_lion_king">The Lion King</string>
+    <string name="select_a_date">SELECT A DATE</string>
+    <string name="adventure_animation_drama_2h_15m">Adventure | Animation | Drama ~ 2h 15m</string>
+    <string name="aug_10_sat">AUG 10 Sat</string>
+    <string name="aug_11_sun">AUG 11 SUN</string>
+    <string name="aug_12_mon">AUG 12 MON</string>
+    <string name="aug_13_tue">AUG 13 TUE</string>
+    <string name="the_lion_king_photo">The Lion King</string>
+    <string name="the_lion_king_seatsPage">The Lion King</string>
+    <string name="select_seats">SELECT SEATS</string>
+    <string name="adventure_animation_drama_2h_15m_seatsPage">Adventure | Animation | Drama ~ 2h 15m</string>
+    <string name="colombo_city_center">COLOMBO CITY CENTER</string>
+    <string name="_11_aug_sun">11 AUG SUN</string>
+    <string name="screen">SCREEN</string>
+    <string name="a1">A1</string>
+    <string name="a0">A0</string>
+    <string name="b1">B1</string>
+    <string name="b0">B0</string>
+    <string name="b2">B2</string>
+    <string name="b3">B3</string>
+    <string name="b4">B4</string>
+    <string name="b5">B5</string>
+    <string name="b6">B6</string>
+    <string name="b7">B7</string>
+    <string name="b8">B8</string>
+    <string name="a2">A2</string>
+    <string name="a3">A3</string>
+    <string name="a4">A4</string>
+    <string name="a5">A5</string>
+    <string name="a6">A6</string>
+    <string name="a7">A7</string>
+    <string name="todo">TODO</string>
+    <string name="the_lion_king_SelectThreaterPage">The Lion King</string>
+    <string name="the_lion_king_SelectThreaterPage_name">The Lion King</string>
+    <string name="_11_aug_sun_SelectThreaterPage">11 AUG SUN</string>
+    <string name="select_a_threater">SELECT A THREATER</string>
+    <string name="adventure_animation_drama_2h_15m_SelectThreaterPage">Adventure | Animation | Drama ~ 2h 15m</string>
+    <string name="offer1">OFFER</string>
+    <string name="colombo_city_center_SelectThreaterPage">COLOMBO CITY CENTER</string>
+    <string name="liberty_by_scope_cinemas">LIBERTY BY SCOPE CINEMAS</string>
+    <string name="offer2">OFFER</string>
+    <string name="_10_45_am">10.45 AM</string>
+    <string name="offer3">OFFER</string>
+    <string name="offer4">OFFER</string>
+    <string name="_04_30_pm_">04.30 PM</string>
+    <string name="_04_30_pm">04.30 PM</string>
+    <string name="_01_15_pm">01.15 PM</string>
+</resources>
