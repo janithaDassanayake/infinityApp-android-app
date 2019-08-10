@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -36,6 +37,8 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 open_Insert_User_activity();
 
+                Toast.makeText(MainActivity.this,"inset Staff",Toast.LENGTH_LONG).show();
+
             }
         });
 
@@ -46,6 +49,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 open_Delete_user_activity();
 
+                Toast.makeText(MainActivity.this,"Delet Users",Toast.LENGTH_LONG).show();
             }
         });
 
@@ -55,6 +59,8 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 open_Edit_user_activity();
+
+                Toast.makeText(MainActivity.this,"Edit user",Toast.LENGTH_LONG).show();
 
             }
         });
@@ -66,6 +72,8 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 open_search_user_activity();
 
+                Toast.makeText(MainActivity.this,"Search user",Toast.LENGTH_LONG).show();
+
             }
         });
 
@@ -75,6 +83,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 open_text_user_activity();
 
+                Toast.makeText(MainActivity.this,"FeedBacks",Toast.LENGTH_LONG).show();
             }
         });
 
@@ -85,6 +94,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 open_Block_user_activity();
+
 
             }
         });
