@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity_Home">
+
+    <TextView
+        android:id="@+id/textViewMovies_homePage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#404040"
+        android:text="@string/movies"
+        android:textSize="36sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/buttonNowShowing_homwPage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/now_showing" />
+
+        <Button
+            android:id="@+id/buttonComming_soon_homePage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/coming_soon" />
+
+        <Button
+            android:id="@+id/button_profile_HomePage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/profile" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="112dp"
+            android:layout_height="102dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="53dp"
+            app:srcCompat="@mipmap/anabella" />
+
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/imageView6"
+            android:layout_marginLeft="34dp"
+            android:layout_toRightOf="@+id/imageView6"
+            android:text="@string/anabella" />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView6"
+            android:layout_alignLeft="@+id/textView6"
+            android:layout_alignTop="@+id/textView6"
+            android:layout_marginTop="43dp"
+            android:layout_toRightOf="@+id/imageView6"
+            android:text="@string/english" />
+
+        <Button
+            android:id="@+id/PurchaseTickets"
+            android:layout_below="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView6"
+            android:layout_alignTop="@+id/textView6"
+            android:layout_marginLeft="-2dp"
+            android:layout_marginTop="71dp"
+            android:layout_toRightOf="@+id/imageView6"
+            android:text="@string/purchase_tickets"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+</LinearLayout>

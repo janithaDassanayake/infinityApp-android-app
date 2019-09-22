@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".deleteMovieFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#C58D8D">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView_delteForm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/delete_form"
+                android:textSize="50sp"
+                android:textStyle="bold|italic" />
+
+            <TextView
+                android:id="@+id/textView_blank"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:background="#C90707" />
+
+            <TextView
+                android:id="@+id/textView_movieId_deleteForm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/movie_id"
+                android:textSize="18sp"
+                android:textStyle="bold|italic" />
+
+            <EditText
+                android:id="@+id/editText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="@string/mov123"
+                android:inputType="textPersonName" />
+
+            <Button
+                android:id="@+id/button_delteMovie_deleteMovie"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Delete"
+                android:textSize="30sp" />
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>
