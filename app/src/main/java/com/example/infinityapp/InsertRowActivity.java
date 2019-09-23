@@ -10,6 +10,9 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
+
+import com.example.infinityapp.validation.janithValidation;
 
 
 public class InsertRowActivity extends AppCompatActivity {
@@ -42,24 +45,38 @@ public class InsertRowActivity extends AppCompatActivity {
 
     public void insertRow(View view) {
 
-        TextView userNameTxtView = findViewById(R.id.userNameTxt);
-        TextView userPhoneTxtView = findViewById(R.id.userPhoneTxt);
-        TextView userEmailTxtView = findViewById(R.id.userEmailTxt);
+        if(!mUserName.getText().toString().isEmpty()) {
+            if(new janithValidation().isValidName(mUserName.getText().toString())){
 
-        if(userNameTxtView.getText().toString().trim().equals("")
-                || userPhoneTxtView.getText().toString().trim().equals("")
-                || userEmailTxtView.getText().toString().trim().equals("")){
-            toast("Please Fill All Fields ");
+                if(!mUserPhone.getText().toString().isEmpty()) {
+                    if(new janithValidation().isValidphoneNo(mUserPhone.getText().toString())){
+
+
+                        TextView userNameTxtView = findViewById(R.id.userNameTxt);
+                        TextView userPhoneTxtView = findViewById(R.id.userPhoneTxt);
+                        TextView userEmailTxtView = findViewById(R.id.userEmailTxt);
+
+                        UsersDatabaseAdapter.insertEntry(userNameTxtView.getText().toString().trim(), userPhoneTxtView.getText().toString(), userEmailTxtView.getText().toString());
+                        Intent myIntent = new Intent(InsertRowActivity.this, MainActivity.class);
+                        InsertRowActivity.this.startActivity(myIntent);
+
+
+                    }else{
+                        Toast.makeText(this, "Please enter valid phone No", Toast.LENGTH_SHORT).show();
+                    }
+                }else{
+                    Toast.makeText(this, "Please Enter Phone No", Toast.LENGTH_SHORT).show();
+                }
+            }else{
+                Toast.makeText(this, "Please enter Correct name", Toast.LENGTH_SHORT).show();
+            }
         }else{
-            UsersDatabaseAdapter.insertEntry(userNameTxtView.getText().toString().trim(),userPhoneTxtView.getText().toString(),userEmailTxtView.getText().toString());
-            Intent myIntent = new Intent(InsertRowActivity.this, MainActivity.class);
-            InsertRowActivity.this.startActivity(myIntent);
+            Toast.makeText(this, "Please Enter name", Toast.LENGTH_SHORT).show();
         }
 
+
     }
 
-    private void toast(String please_fill_all_fields_) {
-    }
 
     public boolean onOptionsItemSelected(MenuItem item){
         switch (item.getItemId()) {
