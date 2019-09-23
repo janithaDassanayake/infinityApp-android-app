@@ -25,12 +25,12 @@
             </intent-filter>
         </activity>
         <activity android:name=".MainActivity" />
-        <activity android:name=".Insert_Activity" />
-        <activity android:name=".Delete_user_activity" />
-        <activity android:name=".Edit_user_activity" />
+        <activity android:name=".InsertRowActivity" />
+        <activity android:name=".DeleteRowsActivity" />
+        <activity android:name=".UpdateRowsActivity" />
         <activity android:name=".Block_user_activity" />
         <activity android:name=".Text_user_activity" />
-        <activity android:name=".Search_user_activity" />
+        <activity android:name=".DisplayActivity" />
         <activity android:name=".Infinity_Edit_profile_Activity" />
     </application>
 
