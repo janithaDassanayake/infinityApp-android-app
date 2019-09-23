@@ -118,6 +118,11 @@
     <string name="now_showing">Now Showing</string>
     <string name="coming_soon">Coming soon</string>
     <string name="profile">profile</string>
+    <string name="jstaff_name">Staff Name</string>
+    <string name="jphone_no">Phone No</string>
+    <string name="jadd">Add</string>
+    <string name="jadd_staff_members">Add Staff Members</string>
+    <string name="jclear">Clear</string>
 </resources>
 
 

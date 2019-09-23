@@ -41,18 +41,6 @@ public class UpdateRowsActivity extends AppCompatActivity {
     }
 
 
-    public boolean onOptionsItemSelected(MenuItem item){
-
-
-
-        switch (item.getItemId()) {
-            case android.R.id.home:
-                finish();
-                return true;
-
-        }
-        return super.onOptionsItemSelected(item);
-    }
 
     public boolean onCreateOptionsMenu(Menu menu) {
         return true;

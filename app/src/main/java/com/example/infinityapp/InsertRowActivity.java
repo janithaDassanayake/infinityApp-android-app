@@ -26,8 +26,6 @@ public class InsertRowActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_insert_row);
-        //Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-        //setSupportActionBar(toolbar);
 
 
         insertRowFrom = (Button) findViewById(R.id.insertRowFrom);
@@ -51,14 +49,27 @@ public class InsertRowActivity extends AppCompatActivity {
                 if(!mUserPhone.getText().toString().isEmpty()) {
                     if(new janithValidation().isValidphoneNo(mUserPhone.getText().toString())){
 
+                        if(!mUserEmail.getText().toString().isEmpty()) {
+                            if(new janithValidation().isValidStaff(mUserEmail.getText().toString())){
 
-                        TextView userNameTxtView = findViewById(R.id.userNameTxt);
-                        TextView userPhoneTxtView = findViewById(R.id.userPhoneTxt);
-                        TextView userEmailTxtView = findViewById(R.id.userEmailTxt);
 
-                        UsersDatabaseAdapter.insertEntry(userNameTxtView.getText().toString().trim(), userPhoneTxtView.getText().toString(), userEmailTxtView.getText().toString());
-                        Intent myIntent = new Intent(InsertRowActivity.this, MainActivity.class);
-                        InsertRowActivity.this.startActivity(myIntent);
+
+
+                            TextView userNameTxtView = findViewById(R.id.userNameTxt);
+                            TextView userPhoneTxtView = findViewById(R.id.userPhoneTxt);
+                            TextView userEmailTxtView = findViewById(R.id.userEmailTxt);
+
+                            UsersDatabaseAdapter.insertEntry(userNameTxtView.getText().toString().trim(), userPhoneTxtView.getText().toString(), userEmailTxtView.getText().toString());
+                            Intent myIntent = new Intent(InsertRowActivity.this, MainActivity.class);
+                            InsertRowActivity.this.startActivity(myIntent);
+
+
+                            }else{
+                                Toast.makeText(this, "Please enter staff type", Toast.LENGTH_SHORT).show();
+                            }
+                        }else{
+                            Toast.makeText(this, "Please Enter valid staff", Toast.LENGTH_SHORT).show();
+                        }
 
 
                     }else{
@@ -78,14 +89,23 @@ public class InsertRowActivity extends AppCompatActivity {
     }
 
 
-    public boolean onOptionsItemSelected(MenuItem item){
-        switch (item.getItemId()) {
-            case android.R.id.home:
-                finish();
-                return true;
-        }
-        return super.onOptionsItemSelected(item);
+
+
+
+    public void clearAddstaff(View view){
+        mUserName.setText("");
+        mUserPhone.setText("");
+        mUserEmail.setText("");
     }
+
+
+
+
+
+
+
+
+
 
     public boolean onCreateOptionsMenu(Menu menu) {
         return true;
