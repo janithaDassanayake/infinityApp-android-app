@@ -52,15 +52,15 @@
 
     <ImageView
         android:id="@+id/imageView14"
-        android:layout_width="338dp"
-        android:layout_height="122dp"
+        android:layout_width="322dp"
+        android:layout_height="96dp"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
-        android:layout_marginTop="70dp"
+        android:layout_marginTop="96dp"
         android:layout_marginEnd="36dp"
         android:layout_marginRight="36dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.965"
+        app:layout_constraintHorizontal_bias="0.8"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/view"
         app:srcCompat="@drawable/kl" />
