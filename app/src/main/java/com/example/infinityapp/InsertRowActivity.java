@@ -3,8 +3,10 @@ package com.example.infinityapp;
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -65,24 +67,66 @@ public class InsertRowActivity extends AppCompatActivity {
 
 
                             }else{
-                                Toast.makeText(this, "Please enter staff type", Toast.LENGTH_SHORT).show();
+                                Context context=getApplicationContext();
+                                LayoutInflater inflater=getLayoutInflater();
+                                View customToastroot=inflater.inflate(R.layout.emptyfeild_toast,null);
+                                Toast customToast=new Toast(context);
+
+                                customToast.setView(customToastroot);
+                                customToast.setDuration(Toast.LENGTH_LONG);
+                                customToast.show();
                             }
                         }else{
-                            Toast.makeText(this, "Please Enter valid staff", Toast.LENGTH_SHORT).show();
+                            Context context=getApplicationContext();
+                            LayoutInflater inflater=getLayoutInflater();
+                            View customToastroot=inflater.inflate(R.layout.emptyfeild_toast,null);
+                            Toast customToast=new Toast(context);
+
+                            customToast.setView(customToastroot);
+                            customToast.setDuration(Toast.LENGTH_LONG);
+                            customToast.show();
                         }
 
 
                     }else{
-                        Toast.makeText(this, "Please enter valid phone No", Toast.LENGTH_SHORT).show();
+                        Context context=getApplicationContext();
+                        LayoutInflater inflater=getLayoutInflater();
+                        View customToastroot=inflater.inflate(R.layout.phone_no_toast,null);
+                        Toast customToast=new Toast(context);
+
+                        customToast.setView(customToastroot);
+                        customToast.setDuration(Toast.LENGTH_LONG);
+                        customToast.show();
                     }
                 }else{
-                    Toast.makeText(this, "Please Enter Phone No", Toast.LENGTH_SHORT).show();
+                    Context context=getApplicationContext();
+                    LayoutInflater inflater=getLayoutInflater();
+                    View customToastroot=inflater.inflate(R.layout.phone_no_toast,null);
+                    Toast customToast=new Toast(context);
+
+                    customToast.setView(customToastroot);
+                    customToast.setDuration(Toast.LENGTH_LONG);
+                    customToast.show();
                 }
             }else{
-                Toast.makeText(this, "Please enter Correct name", Toast.LENGTH_SHORT).show();
+                Context context=getApplicationContext();
+                LayoutInflater inflater=getLayoutInflater();
+                View customToastroot=inflater.inflate(R.layout.emptyfeild_toast,null);
+                Toast customToast=new Toast(context);
+
+                customToast.setView(customToastroot);
+                customToast.setDuration(Toast.LENGTH_LONG);
+                customToast.show();
             }
         }else{
-            Toast.makeText(this, "Please Enter name", Toast.LENGTH_SHORT).show();
+            Context context=getApplicationContext();
+            LayoutInflater inflater=getLayoutInflater();
+            View customToastroot=inflater.inflate(R.layout.emptyfeild_toast,null);
+            Toast customToast=new Toast(context);
+
+            customToast.setView(customToastroot);
+            customToast.setDuration(Toast.LENGTH_LONG);
+            customToast.show();
         }
 
 
