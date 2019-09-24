@@ -9,7 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity_Tharik"></activity>
+        <activity android:name=".SelectDateTime"></activity>
+        <activity android:name=".SelectMovie" />
+        <activity android:name=".MainActivity_Tharik" />
         <activity android:name=".MuserMyaccount" />
         <activity android:name=".userEditProfile" />
         <activity android:name=".mforgotpassword2" />
