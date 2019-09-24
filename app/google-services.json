@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "376371646295",
+    "firebase_url": "https://infinityapp-7041b.firebaseio.com",
+    "project_id": "infinityapp-7041b",
+    "storage_bucket": "infinityapp-7041b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:376371646295:android:811386b4fe82d87bdd3812",
+        "android_client_info": {
+          "package_name": "com.example.infinityapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "376371646295-j6q818fo74d1ch2brj8ouog2h70gih5g.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDvggrFIMivQt8gLWVghljXjpHrF93mlXk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "376371646295-j6q818fo74d1ch2brj8ouog2h70gih5g.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
