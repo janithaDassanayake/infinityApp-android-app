@@ -21,10 +21,10 @@ public class MainActivity extends AppCompatActivity {
     }
 
     //open activity to Insert new rows in table
-  /*public void insertRowActivity(View view) {
+  public void insertRowActivity(View view) {
         Intent myIntent = new Intent(MainActivity.this, InsertRowActivity.class);
         MainActivity.this.startActivity(myIntent);
-    }*/
+    }
 
     //Open activity to update rows
     public void updateRowView(View view) {

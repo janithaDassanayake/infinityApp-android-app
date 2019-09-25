@@ -1,6 +1,5 @@
 package com.example.infinityapp;
 
-import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -10,6 +9,8 @@ import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.Spinner;
 import android.widget.Toast;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -21,7 +22,7 @@ public class SelectMovie extends AppCompatActivity implements AdapterView.OnItem
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_select_movie);
 
-        // Spinner element
+         //Spinner element
         final Spinner spinner = (Spinner)findViewById(R.id.movieList);
         Button button = (Button)findViewById(R.id.movieSubmit);
 
