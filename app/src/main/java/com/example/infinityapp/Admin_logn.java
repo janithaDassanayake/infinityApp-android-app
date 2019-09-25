@@ -89,7 +89,8 @@ public class Admin_logn extends AppCompatActivity {
 
                     if (task.isSuccessful()) {
                         Toast.makeText(Admin_logn.this, "Login Is Successful", Toast.LENGTH_SHORT).show();
-                        startActivity(new Intent(Admin_logn.this, HomePage.class));
+                        checkemailverification();
+                        //startActivity(new Intent(Admin_logn.this, HomePage.class));
                     } else {
                         Toast.makeText(Admin_logn.this, "Login failed.Invalid credentials", Toast.LENGTH_SHORT).show();
                         counter--;
@@ -103,6 +104,23 @@ public class Admin_logn extends AppCompatActivity {
 
                 }
             });
+        }
+    }
+
+    private void checkemailverification()
+    {
+        FirebaseUser firebaseUser=FirebaseAuth.getInstance().getCurrentUser();
+
+        Boolean emailflag=firebaseUser.isEmailVerified();
+
+        if(emailflag)
+        {
+            finish();
+            startActivity(new Intent(Admin_logn.this, HomePage.class));
+        }else{
+
+            Toast.makeText(Admin_logn.this, "Please go and verify link sent to your email", Toast.LENGTH_SHORT).show();
+            firebaseAuth.signOut();
         }
     }
 
