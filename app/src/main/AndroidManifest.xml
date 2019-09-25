@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".SelectTheaterSeats"></activity>
+        <activity android:name=".BuyTicket"></activity>
+        <activity android:name=".SelectTheaterSeats" />
         <activity android:name=".SelectDateTime" />
         <activity android:name=".SelectMovie" />
         <activity android:name=".MainActivity_Tharik" />
