@@ -10,5 +10,9 @@
     <color name="TopText">#B9E9E0E0</color>
     <color name="EditText">#B9E9E0E0</color>
     <color name="LessOppasiti_black">#95090505</color>
+    <color name="yellow">#F9B807</color>
+    <color name="blue">#04074D</color>
+    <color name="transparent">#B1B1B1</color>
+    <color name="white">#FFFFFF</color>
 
 </resources>

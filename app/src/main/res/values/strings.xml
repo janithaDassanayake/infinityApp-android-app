@@ -123,6 +123,12 @@
     <string name="jadd">Add</string>
     <string name="jadd_staff_members">Add Staff Members</string>
     <string name="jclear">Clear</string>
+    <string name="sep_27_wed">SEP 27 WED</string>
+    <string name="empty">Empty</string>
+    <string name="sep_28_thu">SEP 28 THU</string>
+    <string name="sep_29_fri">SEP 29 FRI</string>
+    <string name="sep_30_sat">SEP 30 SAT</string>
+    <string name="oct_01_sun">OCT 01 SUN</string>
 </resources>
 
 
