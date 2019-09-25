@@ -118,25 +118,13 @@
             android:textSize="18sp"
             android:textStyle="bold|italic" />
 
-        <CheckBox
-            android:id="@+id/checkBox_horror_InsertMovie"
+        <EditText
+            android:id="@+id/editText_movieType_insertMovies"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/horror"
-            android:textStyle="bold|italic" />
-
-        <CheckBox
-            android:id="@+id/checkBox_commedy_InsertMovie"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/commedy"
-            android:textStyle="bold|italic" />
-
-        <CheckBox
-            android:id="@+id/checkBox_action_InsertMovie"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/action" />
+            android:ems="10"
+            android:hint="@string/horror"
+            android:inputType="textPersonName" />
 
         <TextView
             android:id="@+id/textViewLanguage_InsertMovies"
@@ -146,33 +134,13 @@
             android:textSize="18sp"
             android:textStyle="bold|italic" />
 
-        <RadioGroup
-            android:id="@+id/RadioGroup_insertMovies"
-            android:layout_width="wrap_content"
+        <EditText
+            android:id="@+id/editText_language_insertMovies"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:checkedButton="@id/radioButton_English_editMovies">
-
-            <RadioButton
-                android:id="@+id/radioButton_English_InsertMovies"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="@string/english" />
-
-            <RadioButton
-                android:id="@+id/radioButtonSinhala_InsertMovies"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="@string/sinhala" />
-
-            <RadioButton
-                android:id="@+id/radioButtonTamil_InsertMovies"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="@string/tamil" />
-        </RadioGroup>
+            android:ems="10"
+            android:hint="@string/english"
+            android:inputType="textPersonName" />
 
         <Button
             android:id="@+id/button_InsertMovie_InsertMovie"

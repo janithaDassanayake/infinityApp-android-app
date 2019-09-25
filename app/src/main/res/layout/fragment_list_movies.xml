@@ -21,70 +21,19 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
 
-        <TableLayout
+        <ProgressBar
+            android:id="@+id/progressBar_listmovies"
+            style="?android:attr/progressBarStyle"
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="wrap_content"
+            android:background="#CDBFBF" />
 
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="match_parent" >
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView_movies_id"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#D2C7C7" >
 
-                <TextView
-                    android:id="@+id/textView_movieId_listMovies"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/movie_id"
-                    android:textStyle="bold|italic" />
-
-                <TextView
-                    android:id="@+id/textViewMovieName_listMovies"
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:background="#4CAF50"
-                    android:text="@string/movie_name"
-                    android:textStyle="bold|italic" />
-
-                <TextView
-                    android:id="@+id/textViewProduction_listMovies"
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:text="@string/production"
-                    android:textStyle="bold|italic" />
-
-                <TextView
-                    android:id="@+id/textView_movieType_listMovies"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:background="#4CAF50"
-                    android:text="@string/movie_type" />
-
-                <TextView
-                    android:id="@+id/textView_language_listMovies"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/language" />
-
-                <TextView
-                    android:id="@+id/textViewrunningTime_listmovies"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:background="#4CAE50"
-                    android:text="@string/runningtime"
-                    android:textSize="13sp" />
-
-            </TableRow>
-
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="match_parent" />
-
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="match_parent" />
-
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="match_parent" />
-        </TableLayout>
+        </androidx.recyclerview.widget.RecyclerView>
     </LinearLayout>
 </FrameLayout>
