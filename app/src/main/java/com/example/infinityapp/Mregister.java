@@ -57,7 +57,7 @@ public class Mregister extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                validate2();
+
 
                if(validate1())
                 {
@@ -67,6 +67,8 @@ public class Mregister extends AppCompatActivity {
                    final String user_phone=phone.getText().toString().trim();
                      final String user_password=password.getText().toString().trim();
                      final String User_cpassword=cpassword.getText().toString().trim();
+
+                    validate2();
 
                     firebaseAuth.createUserWithEmailAndPassword(user_email,user_password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
                         @Override
