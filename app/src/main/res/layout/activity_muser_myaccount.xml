@@ -9,7 +9,7 @@
 
 
     <Button
-        android:id="@+id/signout"
+        android:id="@+id/btnsignout"
         android:layout_width="309dp"
         android:layout_height="40dp"
         android:layout_marginStart="8dp"
@@ -42,7 +42,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/edtbtn"
+        android:id="@+id/btnedit"
         android:layout_width="180dp"
         android:layout_height="40dp"
         android:layout_marginStart="8dp"
