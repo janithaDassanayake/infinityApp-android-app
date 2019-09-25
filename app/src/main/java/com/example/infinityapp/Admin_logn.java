@@ -6,20 +6,34 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
+import com.google.firebase.auth.AuthResult;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
+
+/* Malidi Wageesha author*
+
+    User & Admin logins
+ */
 public class Admin_logn extends AppCompatActivity {
 
-    private EditText Name;
+    private EditText Email;
     private EditText Password;
     private TextView Info;
     private Button Login;
     private int counter = 3;
 
-     Button signup;
+     private Button signup;
 
-     TextView forgotpassword;
+     private TextView forgotpassword;
+
+     private FirebaseAuth firebaseAuth;
 
 
     @Override
@@ -29,19 +43,67 @@ public class Admin_logn extends AppCompatActivity {
 
         signup = findViewById(R.id.register);
         forgotpassword=findViewById(R.id.forgot);
-        Name = (EditText)findViewById(R.id.etName);
-        Password = (EditText)findViewById(R.id.etPassword);
+        Email = (EditText)findViewById(R.id.etlogemail);
+        Password = (EditText)findViewById(R.id.etlogpassword);
         Info = (TextView)findViewById(R.id.tvInfo);
         Login = (Button)findViewById(R.id.btnLogin);
 
         Info.setText("No of attempts remaining: 3");
 
-        Login.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                validate(Name.getText().toString(), Password.getText().toString());
-            }
-        });
+        //A firebase Auth instance is created
+        firebaseAuth = FirebaseAuth.getInstance();
+
+        FirebaseUser user=firebaseAuth.getCurrentUser();
+
+       /* if(user!=null)
+        {
+            finish();
+            startActivity(new Intent(Admin_logn.this,HomePage.class));
+        }*/
+
+
+    }
+
+    public void validate(String userEmail,String userPassword)
+    {
+        if(userEmail.equals("Admin@infinity.com") && userPassword.equals("1234"))
+        {
+            Toast.makeText(Admin_logn.this, "Admin login Is Successful", Toast.LENGTH_SHORT).show();
+            Intent intent =new Intent(Admin_logn.this,MainActivity.class);
+            startActivity(intent);
+
+        }else if(userEmail.equals("tharik@infinity.com") && userPassword.equals("1234"))
+        {
+
+            Toast.makeText(Admin_logn.this, "Admin tharik Login Is Successful", Toast.LENGTH_SHORT).show();
+            Intent intent =new Intent(Admin_logn.this,MainActivity_Tharik.class);
+            startActivity(intent);
+
+        }
+        else {
+
+
+            firebaseAuth.signInWithEmailAndPassword(userEmail, userPassword).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
+                @Override
+                public void onComplete(@NonNull Task<AuthResult> task) {
+
+                    if (task.isSuccessful()) {
+                        Toast.makeText(Admin_logn.this, "Login Is Successful", Toast.LENGTH_SHORT).show();
+                        startActivity(new Intent(Admin_logn.this, HomePage.class));
+                    } else {
+                        Toast.makeText(Admin_logn.this, "Login failed.Invalid credentials", Toast.LENGTH_SHORT).show();
+                        counter--;
+
+                        Info.setText("No of attempts remaining: " + String.valueOf(counter));
+
+                        if (counter == 0) {
+                            Login.setEnabled(false);
+                        }
+                    }
+
+                }
+            });
+        }
     }
 
 
@@ -64,35 +126,16 @@ public class Admin_logn extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-    }
 
-    private void validate(String userName, String userPassword){
+        Login.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
 
-        if((userName.equals("Admin")) && (userPassword.equals("1234"))){
-
-            Intent intent =new Intent(Admin_logn.this,MainActivity.class);
-            startActivity(intent);
-
-        }else if((userName.equals("user")) && (userPassword.equals("1234"))){
-
-            Intent intent =new Intent(Admin_logn.this,HomePage.class);
-            startActivity(intent);
-
-        }else if((userName.equals("tharik")) && (userPassword.equals("1234"))){
-
-            Intent intent =new Intent(Admin_logn.this,MainActivity_Tharik.class);
-            startActivity(intent);
-
-        }else{
-            counter--;
-
-            Info.setText("No of attempts remaining: " + String.valueOf(counter));
-
-            if(counter == 0){
-                Login.setEnabled(false);
+                validate(Email.getText().toString(),Password.getText().toString());
             }
-        }
+        });
     }
+
 
 
 

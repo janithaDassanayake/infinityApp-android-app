@@ -44,8 +44,8 @@
 
     <TextView
         android:id="@+id/textView10"
-        android:layout_width="99dp"
-        android:layout_height="24dp"
+        android:layout_width="122dp"
+        android:layout_height="26dp"
         android:layout_marginStart="16dp"
         android:layout_marginLeft="16dp"
         android:layout_marginTop="8dp"
@@ -53,15 +53,15 @@
         android:layout_marginRight="8dp"
         android:layout_marginBottom="8dp"
         android:drawableLeft="@drawable/ic_action_muser"
-        android:text="User Name"
+        android:text="User Email"
         android:textColor="#5CE9E0E0"
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.022"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.587" />
+        app:layout_constraintVertical_bias="0.59" />
 
     <Button
         android:id="@+id/register"
@@ -112,8 +112,8 @@
         app:layout_constraintVertical_bias="0.735" />
 
     <EditText
-        android:id="@+id/etName"
-        android:layout_width="262dp"
+        android:id="@+id/etlogemail"
+        android:layout_width="255dp"
         android:layout_height="43dp"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
@@ -127,15 +127,15 @@
         android:textColorLink="#9CCDDC39"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.931"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.592" />
+        app:layout_constraintVertical_bias="0.595" />
 
     <EditText
-        android:id="@+id/etPassword"
-        android:layout_width="262dp"
-        android:layout_height="42dp"
+        android:id="@+id/etlogpassword"
+        android:layout_width="256dp"
+        android:layout_height="43dp"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginTop="8dp"
@@ -148,8 +148,8 @@
         android:textColorLink="#9CCDDC39"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.929"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.668" />
+        app:layout_constraintVertical_bias="0.677" />
 </androidx.constraintlayout.widget.ConstraintLayout>
