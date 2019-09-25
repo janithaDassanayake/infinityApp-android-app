@@ -55,11 +55,11 @@ public class Admin_logn extends AppCompatActivity {
 
         FirebaseUser user=firebaseAuth.getCurrentUser();
 
-       /* if(user!=null)
+       if(user!=null)
         {
             finish();
             startActivity(new Intent(Admin_logn.this,HomePage.class));
-        }*/
+        }
 
 
     }
