@@ -5,4 +5,171 @@
     android:layout_width="match_parent"
     android:background="@drawable/selectseats"
     android:layout_height="match_parent"
-    tools:context=".SelectTheaterSeats"/>
+    tools:context=".SelectTheaterSeats">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/seatsDetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="450dp"
+        android:layout_marginBottom="1dp"
+        app:layout_constraintBottom_toTopOf="@+id/seatsDetails2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <EditText
+            android:id="@+id/seatNum1"
+            android:layout_width="91dp"
+            android:layout_height="32dp"
+            android:layout_marginStart="9dp"
+            android:layout_marginLeft="9dp"
+            android:ems="10"
+            android:fontFamily="@font/light"
+            android:hint="A16"
+            android:inputType="textPersonName"
+            android:textSize="10sp"
+            app:layout_constraintStart_toEndOf="@+id/seat1"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/seat1"
+            android:layout_width="63dp"
+            android:layout_height="18dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="7dp"
+            android:layout_marginBottom="7dp"
+            android:fontFamily="@font/light"
+            android:gravity="center"
+            android:text="SEAT NO 1 : "
+            android:textAllCaps="false"
+            android:textColor="#343331"
+            android:textSize="10sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/seatsDetails2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:layout_marginBottom="1dp"
+        app:layout_constraintBottom_toTopOf="@+id/seatsDetails3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/seatsDetails">
+
+        <EditText
+            android:id="@+id/seatNum2"
+            android:layout_width="94dp"
+            android:layout_height="31dp"
+            android:layout_marginStart="9dp"
+            android:layout_marginLeft="9dp"
+            android:ems="10"
+            android:fontFamily="@font/light"
+            android:hint="A17"
+            android:inputType="textPersonName"
+            android:textColor="#343331"
+            android:textSize="10sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/seat2"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/seat2"
+            android:layout_width="63dp"
+            android:layout_height="18dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="7dp"
+            android:layout_marginBottom="7dp"
+            android:fontFamily="@font/light"
+            android:gravity="center"
+            android:text="SEAT NO 2 : "
+            android:textAllCaps="false"
+            android:textColor="#343331"
+            android:textSize="10sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.788" />
+
+        <Button
+            android:id="@+id/seatConfirmBtn"
+            android:layout_width="91dp"
+            android:layout_height="29dp"
+            android:layout_marginStart="52dp"
+            android:layout_marginLeft="52dp"
+            android:layout_marginEnd="50dp"
+            android:layout_marginRight="50dp"
+            android:background="@drawable/custombutton2light"
+            android:text="CONFIRM"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/seatNum2"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/seatsDetails3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/seatsDetails2">
+
+        <EditText
+            android:id="@+id/seatNum3"
+            android:layout_width="94dp"
+            android:layout_height="31dp"
+            android:layout_marginStart="9dp"
+            android:layout_marginLeft="9dp"
+            android:ems="10"
+            android:fontFamily="@font/light"
+            android:hint="A17"
+            android:inputType="textPersonName"
+            android:textSize="10sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/seat3"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/seat3"
+            android:layout_width="63dp"
+            android:layout_height="18dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="20dp"
+
+            android:layout_marginTop="7dp"
+            android:layout_marginBottom="7dp"
+            android:fontFamily="@font/light"
+
+            android:gravity="center"
+            android:text="SEAT NO 3 : "
+            android:textAllCaps="false"
+            android:textColor="#343331"
+            android:textSize="10sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.788" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

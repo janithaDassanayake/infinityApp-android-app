@@ -5,6 +5,10 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.example.infinityapp.FireBaseDatabaseHelper;
+import com.example.infinityapp.R;
+import com.example.infinityapp.RecyclerViewMovieConfigTharik;
+
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.RecyclerView;
 
