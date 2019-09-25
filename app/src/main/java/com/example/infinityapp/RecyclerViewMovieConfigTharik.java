@@ -1,7 +1,9 @@
 package com.example.infinityapp;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
+import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
@@ -43,6 +45,16 @@ public class RecyclerViewMovieConfigTharik {
             mRunningTime = (TextView) itemView.findViewById(R.id.textView_m_runningTime_tharik);
             mProduction = (TextView) itemView.findViewById(R.id.textView_m_production_tharik);
             mType = (TextView) itemView.findViewById(R.id.textView_m_type_tharik);
+
+            itemView.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    Intent intent = new Intent(context,editMovieFragment.class);
+                    intent.putExtra("key",key);
+                    intent.putExtra("mId",mId.getText().toString().trim());
+                    //intent.putExtra("mI",mName);
+                }
+            });
 
         }
         public void bind(Movie movie , String key){

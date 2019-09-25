@@ -66,6 +66,23 @@ public class FireBaseDatabaseHelper {
             }
         });
     }
+    public void updateMovie(String key , Movie movie , final DataStatus dataStatus){
+        mRefMovies.child(key).setValue(movie)
+                .addOnSuccessListener(new OnSuccessListener<Void>() {
+                    @Override
+                    public void onSuccess(Void aVoid) {
+                        dataStatus.MovieIsUpdate();
+                    }
+                });
+    }
 
+    public void deleteMovie(String key ,final DataStatus dataStatus){
+        mRefMovies.child(key).setValue(null).addOnSuccessListener(new OnSuccessListener<Void>() {
+            @Override
+            public void onSuccess(Void aVoid) {
+                dataStatus.MovieIsDeleted();
+            }
+        });
+    }
 
 }
