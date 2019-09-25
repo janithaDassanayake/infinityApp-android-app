@@ -1,13 +1,11 @@
 package com.example.infinityapp;
 
-import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
-import android.widget.ImageButton;
-import android.widget.Toast;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -23,10 +21,10 @@ public class MainActivity extends AppCompatActivity {
     }
 
     //open activity to Insert new rows in table
-    public void insertRowActivity(View view) {
+  /*public void insertRowActivity(View view) {
         Intent myIntent = new Intent(MainActivity.this, InsertRowActivity.class);
         MainActivity.this.startActivity(myIntent);
-    }
+    }*/
 
     //Open activity to update rows
     public void updateRowView(View view) {
