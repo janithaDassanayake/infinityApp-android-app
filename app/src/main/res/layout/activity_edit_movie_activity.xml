@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#BDA3C2"
+    tools:context=".editMovieFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/TextView_EditMovieForm_EditMovie"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#3F51B5"
+                    android:text="Edit Movie Form"
+                    android:textSize="50sp"
+                    android:textStyle="bold|italic" />
+
+                <TextView
+                    android:id="@+id/textViewBlank_EditMovies"
+                    android:layout_width="match_parent"
+                    android:layout_height="90dp"
+                    android:background="#F44336" />
+
+                <TextView
+                    android:id="@+id/textView_movieId_editMovie"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/movie_id"
+                    android:textSize="18sp"
+                    android:textStyle="bold|italic" />
+
+                <EditText
+                    android:id="@+id/editText_movieID_editMovie"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="@string/mov123"
+                    android:inputType="textPersonName"
+                    android:textColor="#4CAF50"
+                    android:textColorHint="#4CAF50"
+                    android:textSize="18sp"
+                    android:textStyle="bold|italic" />
+
+                <TextView
+                    android:id="@+id/textView_movieName_editMovie"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/movie_name"
+                    android:textSize="18sp"
+                    android:textStyle="bold|italic" />
+
+                <EditText
+                    android:id="@+id/editText_movieName_editMovie"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="@string/avenger_end_game"
+                    android:inputType="textPersonName"
+                    android:textColorHint="#4CAF50"
+                    android:textSize="18sp"
+                    android:textStyle="bold|italic" />
+
+                <TextView
+                    android:id="@+id/textView_Production_editMovies"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/production"
+                    android:textSize="30sp"
+                    android:textStyle="bold|italic" />
+
+                <EditText
+                    android:id="@+id/editText_production_editMovie"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="@string/infinity_studos"
+                    android:inputType="textPersonName"
+                    android:textColorHint="#4CAF50"
+                    android:textSize="18sp"
+                    android:textStyle="bold|italic" />
+
+                <TextView
+                    android:id="@+id/textView_runningTime_editMovie"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/runningtime"
+                    android:textSize="18sp"
+                    android:textStyle="bold|italic" />
+
+                <EditText
+                    android:id="@+id/editText_runningTime_editMovies"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="@string/_2_hrs_15_min"
+                    android:inputType="textPersonName"
+                    android:textColor="#4CAF50"
+                    android:textSize="18sp"
+                    android:textStyle="bold|italic" />
+
+                <TextView
+                    android:id="@+id/textView_movieType_editmovie"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/movie_type"
+                    android:textSize="18sp"
+                    android:textStyle="bold|italic" />
+
+                <EditText
+                    android:id="@+id/editText_mType_editMovies"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="@string/horror"
+                    android:inputType="textPersonName"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textViewLanguage"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Language"
+                    android:textSize="18sp"
+                    android:textStyle="bold|italic" />
+
+                <EditText
+                    android:id="@+id/editText_mLanguage_editMovies"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="@string/english"
+                    android:inputType="textPersonName"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/button_editMovie_editMovie"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/save_edit"
+                    android:textColor="#4CAF50"
+                    android:textSize="18sp"
+                    android:textStyle="bold|italic" />
+
+                <Button
+                    android:id="@+id/button_DeleteMovie_editMovie2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/m_delete"
+                    android:textColor="#4CAF50"
+                    android:textSize="18sp"
+                    android:textStyle="bold|italic" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>
