@@ -24,6 +24,13 @@ public class mforgotpassword extends AppCompatActivity {
 
     private FirebaseAuth firebaseAuth;
 
+    /* Malidi Wageesha author*
+
+    IT18194272
+
+    Change password
+ */
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

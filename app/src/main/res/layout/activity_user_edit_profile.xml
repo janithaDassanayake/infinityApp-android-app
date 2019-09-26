@@ -2,6 +2,7 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintLayout2"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/pic1"
@@ -16,184 +17,54 @@
         android:layout_marginTop="56dp"
         android:layout_marginEnd="107dp"
         android:layout_marginRight="107dp"
+        android:layout_marginBottom="8dp"
         android:gravity="center"
         android:text="@string/m_editprofile"
         android:textColor="@android:color/background_light"
         android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.028" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="346dp"
-        android:layout_height="540dp"
+        android:layout_width="337dp"
+        android:layout_height="536dp"
         android:layout_marginStart="42dp"
         android:layout_marginLeft="42dp"
         android:layout_marginTop="41dp"
         android:layout_marginEnd="43dp"
         android:layout_marginRight="43dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editbtn2">
-
-        <TextView
-            android:id="@+id/efname"
-            android:layout_width="325dp"
-            android:layout_height="37dp"
-            android:layout_marginStart="1dp"
-            android:layout_marginLeft="1dp"
-            android:layout_marginEnd="3dp"
-            android:layout_marginRight="3dp"
-            android:layout_marginBottom="9dp"
-            android:text="@string/m_displayname"
-            android:textColor="#CDFFE2E2"
-            app:layout_constraintBottom_toTopOf="@+id/elname"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
-        <TextView
-            android:id="@+id/elname"
-            android:layout_width="0dp"
-            android:layout_height="38dp"
-            android:layout_marginStart="1dp"
-            android:layout_marginLeft="1dp"
-            android:layout_marginTop="16dp"
-            android:layout_marginEnd="2dp"
-            android:layout_marginRight="2dp"
-            android:text="@string/m_displaylname"
-            android:textColor="#CBFFFFFF"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/efname" />
+        app:layout_constraintTop_toBottomOf="@+id/editbtn2"
+        app:layout_constraintTop_toTopOf="parent">
 
         <EditText
-            android:id="@+id/eusername"
-            android:layout_width="0dp"
-            android:layout_height="41dp"
-            android:layout_marginTop="16dp"
-            android:ems="10"
-            android:inputType="textPersonName"
-            android:text="@string/m_displayuname"
-            android:textColor="#CBFFFFFF"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/elname" />
-
-        <TextView
-            android:id="@+id/textView4"
-            android:layout_width="339dp"
-            android:layout_height="33dp"
-            android:layout_marginStart="1dp"
-            android:layout_marginLeft="1dp"
-            android:layout_marginTop="16dp"
-            android:layout_marginEnd="2dp"
-            android:layout_marginRight="2dp"
-            android:layout_marginBottom="10dp"
-            android:text="@string/m_displaymail"
-            android:textColor="#CBFFFFFF"
-            app:layout_constraintBottom_toTopOf="@+id/ephone"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/eusername" />
-
-        <EditText
-            android:id="@+id/ephone"
+            android:id="@+id/etchangephone"
             android:layout_width="0dp"
             android:layout_height="43dp"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="8dp"
             android:layout_marginEnd="2dp"
             android:layout_marginRight="2dp"
+            android:layout_marginBottom="8dp"
             android:ems="10"
             android:inputType="textPersonName"
-            android:text="@string/m_displaymobile"
             android:textColor="#CDFFFFFF"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView4" />
-
-        <TextView
-            android:id="@+id/egender"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:layout_marginEnd="13dp"
-            android:layout_marginRight="13dp"
-            android:layout_marginBottom="59dp"
-            android:text="@string/m_displaygender"
-            android:textColor="#CBFFFFFF"
-            app:layout_constraintBottom_toTopOf="@+id/epassword1"
-            app:layout_constraintEnd_toStartOf="@+id/emale"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/ephone"
-            app:layout_constraintVertical_bias="0.0" />
-
-        <RadioButton
-            android:id="@+id/emale"
-            android:layout_width="112dp"
-            android:layout_height="31dp"
-            android:layout_marginEnd="17dp"
-            android:layout_marginRight="17dp"
-            android:layout_marginBottom="24dp"
-            android:text="@string/m_displaymale"
-            android:textColor="#CDFFFFFF"
-            app:layout_constraintBottom_toTopOf="@+id/epassword1"
-            app:layout_constraintEnd_toStartOf="@+id/efemale" />
-
-        <RadioButton
-            android:id="@+id/efemale"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:layout_marginEnd="17dp"
-            android:layout_marginRight="17dp"
-            android:text="@string/m_displayfemale"
-            android:textColor="#CBFFFFFF"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/ephone" />
-
-        <EditText
-            android:id="@+id/epassword1"
-            android:layout_width="338dp"
-            android:layout_height="43dp"
-            android:layout_marginTop="22dp"
-            android:layout_marginEnd="1dp"
-            android:layout_marginRight="1dp"
-            android:layout_marginBottom="23dp"
-            android:ems="10"
-            android:inputType="textPassword"
-            android:text="@string/m_epassword"
-            android:textColor="#CDFFFFFF"
-            app:layout_constraintBottom_toTopOf="@+id/epassword2"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.142"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/efemale" />
-
-        <EditText
-            android:id="@+id/epassword2"
-            android:layout_width="324dp"
-            android:layout_height="45dp"
-            android:layout_marginTop="12dp"
-            android:layout_marginEnd="2dp"
-            android:layout_marginRight="2dp"
-            android:ems="10"
-            android:inputType="textPassword"
-            android:text="@string/m_econpassword"
-            android:textColor="#CDFFFFFF"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.25"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/epassword1" />
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.577" />
 
         <Button
-            android:id="@+id/updatebtn"
+            android:id="@+id/btnupdateuser"
             android:layout_width="160dp"
             android:layout_height="40dp"
             android:layout_marginStart="4dp"
@@ -207,7 +78,7 @@
             app:layout_constraintStart_toStartOf="parent" />
 
         <Button
-            android:id="@+id/deletebtn"
+            android:id="@+id/btndeleteuser"
             android:layout_width="160dp"
             android:layout_height="40dp"
             android:layout_marginStart="76dp"
@@ -217,56 +88,82 @@
             android:layout_marginBottom="28dp"
             android:background="#FF2D48A6"
             android:clickable="true"
-            android:text="@string/m_delete"
+            android:text="Delete Account"
             android:textColor="#CBFFFFFF"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.726"
-            app:layout_constraintStart_toEndOf="@+id/updatebtn" />
+            app:layout_constraintStart_toEndOf="@+id/btnupdateuser" />
 
         <Button
-            android:id="@+id/changebtn1"
-            android:layout_width="65dp"
-            android:layout_height="30dp"
-            android:layout_marginStart="8dp"
-            android:layout_marginLeft="8dp"
-            android:layout_marginBottom="16dp"
-            android:background="#FF2D48A6"
-            android:text="@string/m_changebtn1"
-            android:textColor="#CBD3D8EB"
-            android:textSize="12sp"
-            app:layout_constraintBottom_toBottomOf="@+id/eusername"
-            app:layout_constraintEnd_toEndOf="@+id/eusername"
-            app:layout_constraintHorizontal_bias="0.923"
-            app:layout_constraintStart_toStartOf="@+id/eusername" />
-
-        <Button
-            android:id="@+id/changebtn2"
-            android:layout_width="65dp"
-            android:layout_height="30dp"
-            android:layout_marginBottom="20dp"
-            android:background="#FF2D48A6"
-            android:text="@string/m_changebtn2"
-            android:textColor="#CDFFFFFF"
-            app:layout_constraintBottom_toTopOf="@+id/ephone"
-            app:layout_constraintEnd_toEndOf="@+id/textView4"
-            app:layout_constraintHorizontal_bias="0.963"
-            app:layout_constraintStart_toStartOf="@+id/textView4" />
-
-        <Button
-            android:id="@+id/changebtn3"
-            android:layout_width="65dp"
-            android:layout_height="30dp"
-            android:layout_marginEnd="8dp"
-            android:layout_marginRight="8dp"
-            android:layout_marginBottom="12dp"
+            android:id="@+id/btnchangePassword"
+            android:layout_width="297dp"
+            android:layout_height="34dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
             android:background="#FF2D48A6"
             android:text="@string/m_chnagebtn3"
             android:textColor="#CBFFFFFF"
-            app:layout_constraintBottom_toBottomOf="@+id/epassword1"
-            app:layout_constraintEnd_toEndOf="@+id/epassword1"
-            app:layout_constraintHorizontal_bias="0.977"
-            app:layout_constraintStart_toStartOf="@+id/epassword1" />
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.799"
+            tools:layout_editor_absoluteX="19dp"
+            tools:text="Change Password" />
+
+        <EditText
+            android:id="@+id/etchangefname"
+            android:layout_width="337dp"
+            android:layout_height="37dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="28dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="8dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.625"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.028" />
+
+        <EditText
+            android:id="@+id/etchangelname"
+            android:layout_width="337dp"
+            android:layout_height="44dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.203"
+            tools:layout_editor_absoluteX="1dp" />
+
+        <EditText
+            android:id="@+id/tvemaildis"
+            android:layout_width="327dp"
+            android:layout_height="43dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="8dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/constraintLayout2"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.379" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
