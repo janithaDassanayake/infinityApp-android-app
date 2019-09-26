@@ -88,12 +88,12 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="4dp"
             android:fontFamily="@font/black"
-            android:text="NumberOfSeats"
+            android:text="no"
             android:textAlignment="center"
             android:textColor="@color/white"
             android:textSize="11dp"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.269"
+            app:layout_constraintHorizontal_bias="0.32"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -109,7 +109,7 @@
             android:textColor="@color/white"
             android:textSize="12dp"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.28"
+            app:layout_constraintHorizontal_bias="0.45"
             app:layout_constraintStart_toEndOf="@+id/numOfSeat"
             app:layout_constraintTop_toTopOf="parent" />
 

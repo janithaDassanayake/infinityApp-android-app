@@ -39,7 +39,10 @@ public class SelectTheaterSeats extends AppCompatActivity {
 
                 if (EmptyFieldValidation()) {
 
+
+
                     Intent intent = new Intent(SelectTheaterSeats.this, ReservationSummery.class);
+                   // intent.putExtra("seatCount", CountSeats());
                     intent.putExtra("seat1", seat1.getText());
                     intent.putExtra("seat2", seat2.getText());
                     intent.putExtra("seat3", seat3.getText());
@@ -78,6 +81,30 @@ public class SelectTheaterSeats extends AppCompatActivity {
 
         return result;
     }
+
+   /* private int CountSeats(){
+        int count;
+        String seat_1 = seat1.getText().toString();
+        String seat_2 = seat2.getText().toString();
+        String seat_3 = seat3.getText().toString();
+
+        if (!seat_1.isEmpty() && !seat_2.isEmpty() && !seat_3.isEmpty()){
+            count = 3;
+        }else if (!seat_1.isEmpty() && !seat_2.isEmpty()){
+            count = 2;
+        }else if (!seat_2.isEmpty() && !seat_3.isEmpty()){
+            count = 2;
+        }else if (!seat_1.isEmpty() && !seat_3.isEmpty()){
+            count = 2;
+        }else if (!seat_1.isEmpty()){
+            count = 1;
+        }else if (!seat_2.isEmpty() ){
+            count = 1;
+        }else
+            count = 1;
+
+        return count;
+    }*/
 
 
 
