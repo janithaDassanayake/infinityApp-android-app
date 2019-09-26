@@ -33,10 +33,8 @@
         android:layout_width="337dp"
         android:layout_height="536dp"
         android:layout_marginStart="42dp"
-        android:layout_marginLeft="42dp"
         android:layout_marginTop="41dp"
         android:layout_marginEnd="43dp"
-        android:layout_marginRight="43dp"
         android:layout_marginBottom="8dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -47,28 +45,24 @@
 
         <EditText
             android:id="@+id/etchangephone"
-            android:layout_width="0dp"
-            android:layout_height="43dp"
+            android:layout_width="311dp"
+            android:layout_height="41dp"
             android:layout_marginTop="8dp"
-            android:layout_marginEnd="2dp"
-            android:layout_marginRight="2dp"
+            android:layout_marginEnd="8dp"
             android:layout_marginBottom="8dp"
             android:ems="10"
             android:inputType="textPersonName"
             android:textColor="#CDFFFFFF"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="1.0"
-            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.577" />
+            app:layout_constraintVertical_bias="0.553" />
 
         <Button
             android:id="@+id/btnupdateuser"
             android:layout_width="160dp"
             android:layout_height="40dp"
             android:layout_marginStart="4dp"
-            android:layout_marginLeft="4dp"
             android:layout_marginBottom="28dp"
             android:background="#FF2D48A6"
             android:clickable="true"
@@ -82,9 +76,7 @@
             android:layout_width="160dp"
             android:layout_height="40dp"
             android:layout_marginStart="76dp"
-            android:layout_marginLeft="76dp"
             android:layout_marginEnd="30dp"
-            android:layout_marginRight="30dp"
             android:layout_marginBottom="28dp"
             android:background="#FF2D48A6"
             android:clickable="true"
@@ -97,17 +89,20 @@
 
         <Button
             android:id="@+id/btnchangePassword"
-            android:layout_width="297dp"
+            android:layout_width="0dp"
             android:layout_height="34dp"
+            android:layout_marginStart="19dp"
             android:layout_marginTop="8dp"
+            android:layout_marginEnd="19dp"
             android:layout_marginBottom="8dp"
             android:background="#FF2D48A6"
             android:text="@string/m_chnagebtn3"
             android:textColor="#CBFFFFFF"
             app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.799"
-            tools:layout_editor_absoluteX="19dp"
             tools:text="Change Password" />
 
         <EditText
@@ -115,10 +110,8 @@
             android:layout_width="337dp"
             android:layout_height="37dp"
             android:layout_marginStart="8dp"
-            android:layout_marginLeft="8dp"
             android:layout_marginTop="28dp"
             android:layout_marginEnd="8dp"
-            android:layout_marginRight="8dp"
             android:layout_marginBottom="8dp"
             android:ems="10"
             android:inputType="textPersonName"
@@ -132,7 +125,7 @@
 
         <EditText
             android:id="@+id/etchangelname"
-            android:layout_width="337dp"
+            android:layout_width="0dp"
             android:layout_height="44dp"
             android:layout_marginTop="8dp"
             android:layout_marginBottom="8dp"
@@ -140,30 +133,29 @@
             android:inputType="textPersonName"
             android:textColor="@color/white"
             app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.203"
-            tools:layout_editor_absoluteX="1dp" />
+            app:layout_constraintVertical_bias="0.203" />
 
         <EditText
             android:id="@+id/tvemaildis"
-            android:layout_width="327dp"
-            android:layout_height="43dp"
+            android:layout_width="291dp"
+            android:layout_height="48dp"
             android:layout_marginStart="8dp"
-            android:layout_marginLeft="8dp"
             android:layout_marginTop="8dp"
             android:layout_marginEnd="8dp"
-            android:layout_marginRight="8dp"
             android:layout_marginBottom="8dp"
             android:ems="10"
             android:inputType="textPersonName"
             android:textColor="@color/white"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/constraintLayout2"
+
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.379" />
+            app:layout_constraintVertical_bias="0.364" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

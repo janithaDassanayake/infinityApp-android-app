@@ -3,6 +3,7 @@ package com.example.infinityapp;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -26,7 +27,7 @@ public class userEditProfile extends AppCompatActivity {
 
     private EditText changeFname,changeLname,changePhone;
 
-    private EditText displayEmail;
+   private EditText displayEmail;
 
     private Button changePassword,update,deleteAcc;
 
@@ -37,8 +38,8 @@ public class userEditProfile extends AppCompatActivity {
     private FirebaseUser firebaseUser;
 
     private DatabaseReference mPostReference;
-
-
+    String mydata="";
+    String data[ ];
 
 
     @Override
@@ -46,6 +47,7 @@ public class userEditProfile extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_user_edit_profile);
 
+        Log.d("mydata","mama malidi");
         changeFname=findViewById(R.id.etchangefname);
         changeLname=findViewById(R.id.etchangelname);
         changePhone=findViewById(R.id.etchangephone);
@@ -66,27 +68,48 @@ public class userEditProfile extends AppCompatActivity {
         firebaseUser=firebaseAuth.getCurrentUser();
 
 
-        final DatabaseReference databaseReference=firebaseDatabase.getReference(firebaseAuth.getUid());
+      //  final DatabaseReference databaseReference=firebaseDatabase.getReference(firebaseAuth.getUid());
 
-        databaseReference.addValueEventListener(new ValueEventListener() {
+       // databaseReference.addValueEventListener(new ValueEventListener() {
 
 
+
+        try {
+
+
+DatabaseReference databaseReference = FirebaseDatabase.getInstance().getReference();
+DatabaseReference databaseReference1=databaseReference.child("users");
+
+//String id="0xjtiCfdavPTCkUwJqTDCPypAv72";
+            String id=firebaseAuth.getUid();
+
+
+
+databaseReference1.child(id).addListenerForSingleValueEvent(new ValueEventListener() {
 
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
 
-                User user=dataSnapshot.getValue(User.class);
-                if(user!=null) {
+               // User user=dataSnapshot.getValue(User.class);
 
+                for (DataSnapshot user :dataSnapshot.getChildren() ){
 
-                    changeFname.setText(user.getFirstName());
-                    changeLname.setText(user.getLastName());
-                    displayEmail.setText(user.getEmail());
-                    changePhone.setText(user.getPhone());
+                    mydata+=user.getValue().toString()+"/";
+
+                    Log.d("mydata",user.getValue().toString());
+                }
+                data=mydata.split("/");
+
+                changeFname.setText(data[0]);
+                changeLname.setText(data[1]);
+                displayEmail.setText(data[2]);
+                changePhone.setText(data[3]);
+
+/*
                     //
                     //  displayEmail.setText(user.getEmail());
-                }
 
+*/
 
 
             }
@@ -100,13 +123,19 @@ public class userEditProfile extends AppCompatActivity {
             }
         });
 
+        }catch (Exception e){
+            Log.d("mydata","firebase error"+e);
+        }
 
 
-
-
+/*
         update.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+
+                DatabaseReference databaseReference = FirebaseDatabase.getInstance().getReference();
+
+                DatabaseReference databaseReference1=databaseReference.child("users");
 
               String firstName=changeFname.getText().toString();
                 String lastName=changeLname.getText().toString();
@@ -115,11 +144,11 @@ public class userEditProfile extends AppCompatActivity {
 
                 User user=new User(firstName,lastName,Email,Phone);
 
-                databaseReference.setValue(user);
+                databaseReference1.setValue(user);
 
                 finish();
             }
-        });
+        });*/
 
 
     }

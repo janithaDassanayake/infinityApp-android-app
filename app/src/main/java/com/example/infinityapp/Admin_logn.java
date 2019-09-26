@@ -59,8 +59,9 @@ public class Admin_logn extends AppCompatActivity {
 
        if(user!=null)
         {
-            finish();
+
             startActivity(new Intent(Admin_logn.this,HomePage.class));
+            finish();
         }
 
 
