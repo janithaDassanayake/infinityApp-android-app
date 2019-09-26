@@ -38,25 +38,25 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <Button
-            android:id="@+id/sep27"
+            android:id="@+id/date1"
             android:layout_width="48dp"
             android:layout_height="47dp"
             android:layout_marginStart="32dp"
             android:layout_marginLeft="32dp"
             android:layout_marginEnd="12dp"
             android:layout_marginRight="12dp"
-            android:background="@drawable/custom_button"
+            android:background="@drawable/custom_button_press_colour"
             android:text="@string/sep_27_wed"
             android:textColor="@color/white"
             android:textSize="12dp"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/sep28"
+            app:layout_constraintEnd_toStartOf="@+id/date2"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.0" />
 
         <Button
-            android:id="@+id/sep28"
+            android:id="@+id/date2"
             android:layout_width="48dp"
             android:layout_height="47dp"
 
@@ -64,19 +64,19 @@
             android:layout_marginLeft="12dp"
             android:layout_marginEnd="12dp"
             android:layout_marginRight="12dp"
-            android:background="@drawable/custom_button"
+            android:background="@drawable/custom_button_press_colour"
             android:text="@string/sep_28_thu"
             android:textColor="@color/white"
             android:textSize="12sp"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/sep29"
-            app:layout_constraintStart_toEndOf="@+id/sep27"
+            app:layout_constraintEnd_toStartOf="@+id/date3"
+            app:layout_constraintStart_toEndOf="@+id/date1"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.0" />
 
 
         <Button
-            android:id="@+id/sep29"
+            android:id="@+id/date3"
             android:layout_width="48dp"
             android:layout_height="47dp"
 
@@ -84,19 +84,19 @@
             android:layout_marginLeft="12dp"
             android:layout_marginEnd="12dp"
             android:layout_marginRight="12dp"
-            android:background="@drawable/custom_button"
+            android:background="@drawable/custom_button_press_colour"
             android:text="@string/sep_29_fri"
             android:textColor="@color/white"
             android:textSize="12dp"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/sep30"
-            app:layout_constraintStart_toEndOf="@+id/sep28"
+            app:layout_constraintEnd_toStartOf="@+id/date4"
+            app:layout_constraintStart_toEndOf="@+id/date2"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.0" />
 
 
         <Button
-            android:id="@+id/sep30"
+            android:id="@+id/date4"
             android:layout_width="48dp"
             android:layout_height="47dp"
 
@@ -104,19 +104,19 @@
             android:layout_marginLeft="12dp"
             android:layout_marginEnd="12dp"
             android:layout_marginRight="12dp"
-            android:background="@drawable/custom_button"
+            android:background="@drawable/custom_button_press_colour"
             android:text="@string/sep_30_sat"
             android:textColor="@color/white"
             android:textSize="12dp"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/oct01"
-            app:layout_constraintStart_toEndOf="@+id/sep29"
+            app:layout_constraintEnd_toStartOf="@+id/date5"
+            app:layout_constraintStart_toEndOf="@+id/date3"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="1.0" />
 
 
         <Button
-            android:id="@+id/oct01"
+            android:id="@+id/date5"
             android:layout_width="48dp"
             android:layout_height="47dp"
 
@@ -124,14 +124,14 @@
             android:layout_marginLeft="12dp"
             android:layout_marginEnd="32dp"
             android:layout_marginRight="32dp"
-            android:background="@drawable/custom_button"
+            android:background="@drawable/custom_button_press_colour"
             android:text="@string/oct_01_sun"
             android:textColor="@color/white"
             android:textSize="12dp"
 
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/sep30"
+            app:layout_constraintStart_toEndOf="@+id/date4"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.0" />
 
@@ -148,7 +148,7 @@
         app:layout_constraintTop_toBottomOf="@+id/dateLine1">
 
         <Button
-            android:id="@+id/oct02"
+            android:id="@+id/date6"
             android:layout_width="48dp"
             android:layout_height="47dp"
 
@@ -156,7 +156,7 @@
             android:layout_marginLeft="28dp"
             android:layout_marginEnd="300dp"
             android:layout_marginRight="300dp"
-            android:background="@drawable/custom_button"
+            android:background="@drawable/custom_button_press_colour"
             android:text="OCT 02 MON"
             android:textColor="@color/white"
             android:textSize="12dp"
@@ -188,7 +188,7 @@
             android:layout_marginLeft="44dp"
             android:layout_marginEnd="18dp"
             android:layout_marginRight="18dp"
-            android:background="@drawable/custom_button"
+            android:background="@drawable/custom_button_press_colour"
             android:text="10.00 AM"
             android:textColor="@color/white"
             android:textSize="12dp"
@@ -208,7 +208,7 @@
             android:layout_marginLeft="18dp"
             android:layout_marginEnd="18dp"
             android:layout_marginRight="18dp"
-            android:background="@drawable/custom_button"
+            android:background="@drawable/custom_button_press_colour"
             android:text="01.00 PM"
             android:textColor="@color/white"
             android:textSize="12dp"
@@ -227,7 +227,7 @@
             android:layout_marginLeft="18dp"
             android:layout_marginEnd="44dp"
             android:layout_marginRight="44dp"
-            android:background="@drawable/custom_button"
+            android:background="@drawable/custom_button_press_colour"
             android:text="04.00 PM"
             android:textColor="@color/white"
             android:textSize="12dp"

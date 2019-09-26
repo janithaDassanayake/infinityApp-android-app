@@ -31,7 +31,7 @@ public class SelectMovie extends AppCompatActivity implements AdapterView.OnItem
 
         // Spinner Drop down elements
         List<String> categories = new ArrayList<String>();
-        categories.add("Spider Man - Far From HOme");
+        categories.add("Spider Man - Far From Home");
         categories.add("Hobs & Show");
         categories.add("Godzila");
         categories.add("Rambo");
@@ -66,7 +66,7 @@ public class SelectMovie extends AppCompatActivity implements AdapterView.OnItem
         String item = parent.getItemAtPosition(position).toString();
 
         //toast
-        Toast.makeText(parent.getContext(), "Selected: " + item, Toast.LENGTH_LONG).show();
+        Toast.makeText(parent.getContext(), "Selected: " + item, Toast.LENGTH_SHORT).show();
 
     }
 

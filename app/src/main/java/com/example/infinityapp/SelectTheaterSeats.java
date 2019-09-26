@@ -6,18 +6,50 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
+import android.widget.Toast;
 
 public class SelectTheaterSeats extends AppCompatActivity {
 
     Button seatConfirmBtn;
-
+    TextView seat1, seat2, seat3;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_select_theater_seats);
 
+        seat1 = findViewById(R.id.seatNum1);
+        seat2 = findViewById(R.id.seatNum2);
+        seat3 = findViewById(R.id.seatNum3);
+
+
+
+
+        final TextView movieTitle = findViewById(R.id.movieTitle_selectSeats);
+        Bundle bundle = getIntent().getExtras();
+        String data = bundle.get("movieName").toString();
+        movieTitle.setText(data);
+
         seatConfirmBtn = findViewById(R.id.seatConfirmBtn);
+
+        seatConfirmBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                if (EmptyFieldValidation()) {
+
+                    Intent intent = new Intent(SelectTheaterSeats.this, ReservationSummery.class);
+                    intent.putExtra("seat1", seat1.getText());
+                    intent.putExtra("seat2", seat2.getText());
+                    intent.putExtra("seat3", seat3.getText());
+                    intent.putExtra("movieNameBySeat", movieTitle.getText());
+                    startActivity(intent);
+
+                }
+
+            }
+        });
 
     }
 
@@ -25,12 +57,28 @@ public class SelectTheaterSeats extends AppCompatActivity {
     protected void onResume() {
         super.onResume();
 
-        seatConfirmBtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(SelectTheaterSeats.this, BookSummery.class);
-                startActivity(intent);
-            }
-        });
+
     }
+
+
+
+    private Boolean EmptyFieldValidation(){
+
+        Boolean result = false;
+
+        String seat_1 = seat1.getText().toString();
+        String seat_2 = seat2.getText().toString();
+        String seat_3 = seat3.getText().toString();
+
+        if (seat_1.isEmpty() && seat_2.isEmpty() && seat_3.isEmpty()){
+            Toast.makeText(SelectTheaterSeats.this, "Please add alteast 1 seat", Toast.LENGTH_SHORT).show();
+        }else {
+            result = true;
+        }
+
+        return result;
+    }
+
+
+
 }
