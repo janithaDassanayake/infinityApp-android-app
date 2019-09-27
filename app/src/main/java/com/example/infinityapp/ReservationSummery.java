@@ -2,6 +2,7 @@ package com.example.infinityapp;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.pm.ActivityInfo;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -26,6 +27,7 @@ public class ReservationSummery extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_reservation_summery);
+        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
 
         firebaseAuth = FirebaseAuth.getInstance();
 
@@ -148,9 +150,11 @@ public class ReservationSummery extends AppCompatActivity {
 
     private void sendBookingData(){
         FirebaseDatabase firebaseDatabase = FirebaseDatabase.getInstance();
-        DatabaseReference myref = firebaseDatabase.getReference("Bookings").child(d_seatNumber1);
+        DatabaseReference myref = firebaseDatabase.getReference("Bookings");
+       String key = myref.push().getKey();
         BookingDetails bookingDetails = new BookingDetails(d_date, d_movieName, d_price, d_seatNumber1, d_seatNumber2, d_seatNumber3, d_time);
-        myref.setValue(bookingDetails);
+        myref.child(key).setValue(bookingDetails);
+       // myref.child("date").setValue(d_date);
     }
 
 }
