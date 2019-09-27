@@ -1,9 +1,5 @@
 package com.example.infinityapp;
 
-import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.ContentResolver;
 import android.content.Intent;
 import android.net.Uri;
@@ -17,6 +13,10 @@ import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
@@ -158,3 +158,4 @@ public class InsertMovieImage_tharik extends AppCompatActivity {
         }
     }
 }
+
