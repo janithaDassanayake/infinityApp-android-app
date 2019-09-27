@@ -6,6 +6,8 @@
     android:background="#D8AC6B"
     tools:context=".insertMovieFragment">
 
+
+
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">
@@ -141,6 +143,14 @@
             android:ems="10"
             android:hint="@string/english"
             android:inputType="textPersonName" />
+
+
+        //from here
+
+
+
+
+        //to here
 
         <Button
             android:id="@+id/button_InsertMovie_InsertMovie"

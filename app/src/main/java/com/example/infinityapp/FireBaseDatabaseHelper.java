@@ -56,15 +56,17 @@ public class FireBaseDatabaseHelper {
             }
         });
     }
-    public void addMovie(Movie movie , final DataStatus dataStatus){
+    public String addMovie(Movie movie , final DataStatus dataStatus){
 
         String key = mRefMovies.push().getKey();
+
         mRefMovies.child(key).setValue(movie).addOnSuccessListener(new OnSuccessListener<Void>() {
             @Override
             public void onSuccess(Void aVoid) {
                 dataStatus.MovieIsInserted();
             }
         });
+        return key;
     }
     public void updateMovie(String key , Movie movie , final DataStatus dataStatus){
         mRefMovies.child(key).setValue(movie)

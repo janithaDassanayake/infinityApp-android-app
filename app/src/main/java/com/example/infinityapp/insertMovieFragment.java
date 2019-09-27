@@ -1,5 +1,6 @@
 package com.example.infinityapp;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -59,7 +60,7 @@ public class insertMovieFragment extends Fragment {
         btnInsert.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Movie movie = new Movie();
+                final Movie movie = new Movie();
 
                 movie.setmId(EmId.getText().toString().trim());
                 movie.setmName(EmName.getText().toString().trim());
@@ -69,7 +70,7 @@ public class insertMovieFragment extends Fragment {
                 movie.setmType(EmType.getText().toString().trim());
 
 
-                new FireBaseDatabaseHelper().addMovie(movie, new FireBaseDatabaseHelper.DataStatus() {
+               String Insertedkey = new FireBaseDatabaseHelper().addMovie(movie, new FireBaseDatabaseHelper.DataStatus() {
                     @Override
                     public void MovieIsLoaded(List<Movie> movies, List<String> keys) {
 
@@ -77,6 +78,7 @@ public class insertMovieFragment extends Fragment {
 
                     @Override
                     public void MovieIsInserted() {
+
                         Toast.makeText(getContext(), "Movie Inserted", Toast.LENGTH_SHORT).show();
                     }
 
@@ -90,8 +92,14 @@ public class insertMovieFragment extends Fragment {
 
                     }
                 });
+
+                Intent i = new Intent(getActivity(),InsertMovieImage_tharik.class);
+
+                i.putExtra("insertedKey",Insertedkey);
+                startActivity(i);
             }
         });
+
 
         return view;
     }
