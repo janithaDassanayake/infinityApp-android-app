@@ -17,7 +17,6 @@ import java.util.List;
 
 public class listMovies extends Fragment {
 
-
     private RecyclerView recyclerView;
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,

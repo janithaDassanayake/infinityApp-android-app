@@ -2,13 +2,14 @@ package com.example.infinityapp;
 
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.constraintlayout.widget.ConstraintLayout;
 
 import android.content.Context;
 import android.content.Intent;
+import android.graphics.drawable.AnimationDrawable;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.Menu;
-import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
@@ -19,6 +20,9 @@ import com.example.infinityapp.validation.janithValidation;
 
 public class InsertRowActivity extends AppCompatActivity {
 
+    ConstraintLayout myLayout;
+    AnimationDrawable animationDrawable;
+
     private TextView mUserName;
     private TextView mUserPhone;
     private TextView mUserEmail;
@@ -28,6 +32,15 @@ public class InsertRowActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_insert_row);
+
+        myLayout=(ConstraintLayout)findViewById(R.id.myLayout);
+        animationDrawable=(AnimationDrawable)myLayout.getBackground();
+        animationDrawable.setEnterFadeDuration(4500);
+        animationDrawable.setExitFadeDuration(4500);
+        animationDrawable.start();
+
+
+
 
 
         insertRowFrom = (Button) findViewById(R.id.insertRowFrom);

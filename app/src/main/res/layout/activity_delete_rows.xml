@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#10102A"
+    android:background="@drawable/jani_bg_animation"
+    android:id="@+id/myLayout"
     tools:context=".DeleteRowsActivity">
 
 
@@ -22,45 +23,42 @@
         app:layout_constraintHorizontal_bias="0.4"
         app:layout_constraintStart_toStartOf="parent" />
 
-    <ImageView
-        android:id="@+id/imageView3"
-        android:layout_width="253dp"
-        android:layout_height="66dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="76dp"
-        android:layout_marginRight="76dp"
-        android:layout_marginBottom="30dp"
-        app:layout_constraintBottom_toTopOf="@+id/imageView14"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.959"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.287"
-        app:srcCompat="@drawable/kj" />
 
     <ImageView
-        android:id="@+id/imageView14"
-        android:layout_width="338dp"
-        android:layout_height="122dp"
-        app:layout_constraintBottom_toTopOf="@+id/listviewdeleteID"
+        android:id="@+id/imageView15"
+        android:layout_width="258dp"
+        android:layout_height="73dp"
+        android:layout_marginTop="4dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintHorizontal_bias="0.581"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ii3" />
+
+    <ImageView
+        android:id="@+id/imageView17"
+        android:layout_width="370dp"
+        android:layout_height="121dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.609"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView15"
         app:srcCompat="@drawable/kl" />
 
     <TextView
-        android:id="@+id/textView7"
-        android:layout_width="175dp"
-        android:layout_height="23dp"
-        android:layout_marginTop="16dp"
-        android:text="Remove Staff Members"
-        android:textColor="#88FFFFFF"
+        android:id="@+id/textView8"
+        android:layout_width="187dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="35dp"
+        android:text="Remove Staff Members "
+        android:textColor="#D5FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/listviewdeleteID"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.568"
+        app:layout_constraintHorizontal_bias="0.602"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView17"
+        app:layout_constraintVertical_bias="0.462" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

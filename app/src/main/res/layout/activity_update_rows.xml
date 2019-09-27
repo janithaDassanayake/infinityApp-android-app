@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#ED10102A"
+    android:background="@drawable/jani_bg_animation"
+    android:id="@+id/myLayout"
     tools:context=".UpdateRowsActivity">
 
 

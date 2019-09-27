@@ -9,8 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ReservationSummery"></activity>
-        <activity android:name=".Edit_movie_activity" />
+        <activity android:name=".QRScaner"></activity>
         <activity android:name=".BuyTicket" />
         <activity android:name=".SelectTheaterSeats" />
         <activity android:name=".SelectDateTime" />

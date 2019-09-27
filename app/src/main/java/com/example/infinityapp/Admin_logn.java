@@ -2,6 +2,8 @@ package com.example.infinityapp;
 
 import android.content.Context;
 import android.content.Intent;
+import android.content.pm.ActivityInfo;
+import android.graphics.drawable.AnimationDrawable;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -12,6 +14,7 @@ import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.constraintlayout.widget.ConstraintLayout;
 
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
@@ -40,10 +43,26 @@ public class Admin_logn extends AppCompatActivity {
      private FirebaseAuth firebaseAuth;
 
 
+    ConstraintLayout myLayout;
+    AnimationDrawable animationDrawable;
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
+
+
         setContentView(R.layout.activity_admin_logn);
+
+
+        myLayout=(ConstraintLayout)findViewById(R.id.myLayout);
+        animationDrawable=(AnimationDrawable)myLayout.getBackground();
+        animationDrawable.setEnterFadeDuration(4500);
+        animationDrawable.setExitFadeDuration(4500);
+        animationDrawable.start();
+
 
         signup = findViewById(R.id.register);
         forgotpassword=findViewById(R.id.forgot);

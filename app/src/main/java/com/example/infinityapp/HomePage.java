@@ -21,10 +21,6 @@ public class HomePage extends AppCompatActivity {
     }
 
 
-
-
-
-
     @Override
     protected void onResume() {
         super.onResume();
@@ -42,7 +38,7 @@ public class HomePage extends AppCompatActivity {
         buybtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(HomePage.this, BuyTicket.class);
+                Intent intent = new Intent(HomePage.this,BuyTicket.class);
                 startActivity(intent);
             }
         });
