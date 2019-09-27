@@ -1,7 +1,9 @@
 package com.example.infinityapp;
 
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -57,7 +59,7 @@ public class Admin_logn extends AppCompatActivity {
 
         FirebaseUser user=firebaseAuth.getCurrentUser();
 
-       if(user!=null)
+      if(user!=null)
         {
 
             startActivity(new Intent(Admin_logn.this,HomePage.class));
@@ -69,44 +71,44 @@ public class Admin_logn extends AppCompatActivity {
 
     public void validate(String userEmail,String userPassword)
     {
-        if(userEmail.equals("Admin@infinity.com") && userPassword.equals("1234"))
-        {
-            Toast.makeText(Admin_logn.this, "Admin login Is Successful", Toast.LENGTH_SHORT).show();
-            Intent intent =new Intent(Admin_logn.this,MainActivity.class);
-            startActivity(intent);
 
-        }else if(userEmail.equals("tharik@infinity.com") && userPassword.equals("1234"))
-        {
+        if(validate()) {
+            if (userEmail.equals("Admin@infinity.com") && userPassword.equals("1234")) {
+                Toast.makeText(Admin_logn.this, "Admin login Is Successful", Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(Admin_logn.this, MainActivity.class);
+                startActivity(intent);
 
-            Toast.makeText(Admin_logn.this, "Admin tharik Login Is Successful", Toast.LENGTH_SHORT).show();
-            Intent intent =new Intent(Admin_logn.this,MainActivity_Tharik.class);
-            startActivity(intent);
+            } else if (userEmail.equals("tharik@infinity.com") && userPassword.equals("1234")) {
 
-        }
-        else {
+                Toast.makeText(Admin_logn.this, "Admin tharik Login Is Successful", Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(Admin_logn.this, MainActivity_Tharik.class);
+                startActivity(intent);
+
+            } else {
 
 
-            firebaseAuth.signInWithEmailAndPassword(userEmail, userPassword).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
-                @Override
-                public void onComplete(@NonNull Task<AuthResult> task) {
+                firebaseAuth.signInWithEmailAndPassword(userEmail, userPassword).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
+                    @Override
+                    public void onComplete(@NonNull Task<AuthResult> task) {
 
-                    if (task.isSuccessful()) {
-                        Toast.makeText(Admin_logn.this, "Login Is Successful", Toast.LENGTH_SHORT).show();
-                        checkemailverification();
-                        //startActivity(new Intent(Admin_logn.this, HomePage.class));
-                    } else {
-                        Toast.makeText(Admin_logn.this, "Login failed.Invalid credentials", Toast.LENGTH_SHORT).show();
-                        counter--;
+                        if (task.isSuccessful()) {
+                            Toast.makeText(Admin_logn.this, "Login Is Successful", Toast.LENGTH_SHORT).show();
+                            checkemailverification();
+                            //startActivity(new Intent(Admin_logn.this, HomePage.class));
+                        } else {
+                            Toast.makeText(Admin_logn.this, "Login failed.Invalid credentials", Toast.LENGTH_SHORT).show();
+                            counter--;
 
-                        Info.setText("No of attempts remaining: " + String.valueOf(counter));
+                            Info.setText("No of attempts remaining: " + String.valueOf(counter));
 
-                        if (counter == 0) {
-                            Login.setEnabled(false);
+                            if (counter == 0) {
+                                Login.setEnabled(false);
+                            }
                         }
-                    }
 
-                }
-            });
+                    }
+                });
+            }
         }
     }
 
@@ -155,6 +157,32 @@ public class Admin_logn extends AppCompatActivity {
                 validate(Email.getText().toString(),Password.getText().toString());
             }
         });
+    }
+
+    private Boolean validate()
+    {
+        Boolean result=false;
+
+        String value_email = Email.getText().toString();
+        String value_password=Password.getText().toString();
+
+        if(value_email.isEmpty() || value_password.isEmpty())
+        {
+            Context context=getApplicationContext();
+            LayoutInflater inflater=getLayoutInflater();
+            View customToastroot=inflater.inflate(R.layout.emptyfeild_toast,null);
+            Toast customToast=new Toast(context);
+
+            customToast.setView(customToastroot);
+            customToast.setDuration(Toast.LENGTH_LONG);
+            customToast.show();
+        }else{
+
+            result=true;
+
+        }
+
+        return result;
     }
 
 

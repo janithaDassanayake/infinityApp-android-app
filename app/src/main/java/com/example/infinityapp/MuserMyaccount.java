@@ -47,11 +47,13 @@ public class MuserMyaccount extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                firebaseAuth.signOut();;
-                finish();
-
+                FirebaseAuth.getInstance().signOut();
 
                 Intent i=new Intent(MuserMyaccount.this,Admin_logn.class);
+
+
+                i.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                i.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);
 
                 startActivity(i);
             }

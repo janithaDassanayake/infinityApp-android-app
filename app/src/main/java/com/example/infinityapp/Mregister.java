@@ -60,42 +60,40 @@ public class Mregister extends AppCompatActivity {
 
 
 
-               if(validate1())
-                {
-                    final String user_fname=fname.getText().toString().trim();
-                    final String user_lname=lname.getText().toString().trim();
-                     final String user_email=email.getText().toString().trim();
-                   final String user_phone=phone.getText().toString().trim();
-                     final String user_password=password.getText().toString().trim();
-                     final String User_cpassword=cpassword.getText().toString().trim();
+                    if (validate1()) {
+                        final String user_fname = fname.getText().toString().trim();
+                        final String user_lname = lname.getText().toString().trim();
+                        final String user_email = email.getText().toString().trim();
+                        final String user_phone = phone.getText().toString().trim();
+                        final String user_password = password.getText().toString().trim();
+                        final String User_cpassword = cpassword.getText().toString().trim();
 
-                    validate2();
+                          validate2();
 
-                    firebaseAuth.createUserWithEmailAndPassword(user_email,user_password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
-                        @Override
-                        public void onComplete(@NonNull Task<AuthResult> task) {
+                        firebaseAuth.createUserWithEmailAndPassword(user_email, user_password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
+                            @Override
+                            public void onComplete(@NonNull Task<AuthResult> task) {
 
-                            if(task.isSuccessful())
-                            {
-                                User user=new User(user_fname,user_lname,user_email,user_phone);
+                                if (task.isSuccessful()) {
+                                    User user = new User(user_fname, user_lname, user_email, user_phone);
 
-                                FirebaseDatabase.getInstance().getReference("users")
-                                        .child(FirebaseAuth.getInstance().getCurrentUser().getUid())
-                                        .setValue(user);
+                                    FirebaseDatabase.getInstance().getReference("users")
+                                            .child(FirebaseAuth.getInstance().getCurrentUser().getUid())
+                                            .setValue(user);
 
                                /* Toast.makeText(Mregister.this,"Registration Successful",Toast.LENGTH_SHORT).show();
                                 startActivity(new Intent(Mregister.this,HomePage.class));*/
 
-                               sendEmail();
+                                    sendEmail();
 
-                            }else
-                            {
-                                Toast.makeText(Mregister.this,"Registration Failed",Toast.LENGTH_SHORT).show();
-                        }
-                        }
-                    });
+                                } else {
+                                    Toast.makeText(Mregister.this, "Registration Failed", Toast.LENGTH_SHORT).show();
+                                }
+                            }
+                        });
 
-                }
+                    }
+
 
             }
         });
@@ -198,6 +196,7 @@ public class Mregister extends AppCompatActivity {
    private void validate2()
     {
 
+
         String f_name=fname.getText().toString();
         String l_name=lname.getText().toString();
         String e_mail=email.getText().toString();
@@ -219,8 +218,7 @@ public class Mregister extends AppCompatActivity {
             return;
         }
 
-        if(u_password.equals(u_cpassword)==false)
-        {
+        if(u_password.equals(u_cpassword)==false) {
             cpassword.setError("passwords does not match");
             cpassword.requestFocus();
             return;

@@ -22,6 +22,7 @@ import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.Query;
 import com.google.firebase.database.ValueEventListener;
 
 public class userEditProfile extends AppCompatActivity {
@@ -103,9 +104,9 @@ databaseReference1.child(id).addListenerForSingleValueEvent(new ValueEventListen
                 }
                 data=mydata.split("/");
 
-                changeFname.setText(data[0]);
-                changeLname.setText(data[1]);
-                displayEmail.setText(data[2]);
+                displayEmail.setText(data[0]);
+                changeFname.setText(data[1]);
+                changeLname.setText(data[2]);
                 changePhone.setText(data[3]);
 
 /*
@@ -153,11 +154,77 @@ databaseReference1.child(id).addListenerForSingleValueEvent(new ValueEventListen
             }
         });*/
 
+        update.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+
+
+
+
+                       /*     DatabaseReference ref=FirebaseDatabase.getInstance().getReference();
+                            Query delQuery=ref.child("users").orderByChild("email").equalTo(firebaseUser.getEmail());
+
+                            ((Query) delQuery).addListenerForSingleValueEvent(new ValueEventListener() {
+                                @Override
+                                public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                                    for(DataSnapshot deleteSnapshot:dataSnapshot.getChildren()){
+                                        deleteSnapshot.getRef().removeValue();
+                                    }
+                                }
+
+                                @Override
+                                public void onCancelled(@NonNull DatabaseError databaseError) {
+
+
+                                }
+                            });*/
+
+
+
+                update();
+            }
+        });
+
 
     }
 
+    /*private void updateData() {
+        firebaseDatabase= FirebaseDatabase.getInstance();
+       DatabaseReference myref = firebaseDatabase.getReference();
+        myref.child("users").child("awais@gmailcom").addListenerForSingleValueEvent(new ValueEventListener() {
+            @Override
+            public void onDataChange(DataSnapshot dataSnapshot) {
+
+                dataSnapshot.getRef().child("leftSpace").setValue(newValue);
+                dialog.dismiss();
+
+            }
+            @Override
+            public void onCancelled(DatabaseError databaseError) {
+                Log.d("User", databaseError.getMessage());
+            }
+        });
+    }*/
+
+    private void update()
+    {
+        String firstName=changeFname.getText().toString().trim();
+        String lastName=changeLname.getText().toString().trim();
+        String Email=displayEmail.getText().toString().trim();
+        String Phone=changePhone.getText().toString().trim();
+
+        User user=new User(
+                firstName,lastName,Email,Phone
 
 
+        );
+        FirebaseDatabase.getInstance().getReference("users").child(FirebaseAuth.getInstance().getCurrentUser().getUid()).setValue(user);
+
+        Toast.makeText(userEditProfile.this,"Data successfully updated",Toast.LENGTH_SHORT).show();
+
+
+    }
 
 
 
@@ -198,6 +265,26 @@ databaseReference1.child(id).addListenerForSingleValueEvent(new ValueEventListen
 
                             if(task.isSuccessful())
                             {
+
+
+                                DatabaseReference ref=FirebaseDatabase.getInstance().getReference();
+                                Query delQuery=ref.child("users").orderByChild("email").equalTo(firebaseUser.getEmail());
+
+                                ((Query) delQuery).addListenerForSingleValueEvent(new ValueEventListener() {
+                                    @Override
+                                    public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                                        for(DataSnapshot deleteSnapshot:dataSnapshot.getChildren()){
+                                            deleteSnapshot.getRef().removeValue();
+                                        }
+                                    }
+
+                                    @Override
+                                    public void onCancelled(@NonNull DatabaseError databaseError) {
+
+
+                                    }
+                                });
+
                                 Toast.makeText(userEditProfile.this,"Account Deleted successfully",Toast.LENGTH_LONG).show();
 
                                 Intent i=new Intent(userEditProfile.this,Admin_logn.class);
@@ -225,5 +312,7 @@ databaseReference1.child(id).addListenerForSingleValueEvent(new ValueEventListen
                 alertDialog.show();
             }
         });
+
+
     }
 }
