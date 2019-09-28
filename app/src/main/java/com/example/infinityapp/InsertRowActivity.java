@@ -6,6 +6,7 @@ import androidx.constraintlayout.widget.ConstraintLayout;
 
 import android.content.Context;
 import android.content.Intent;
+import android.content.pm.ActivityInfo;
 import android.graphics.drawable.AnimationDrawable;
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -20,8 +21,8 @@ import com.example.infinityapp.validation.janithValidation;
 
 public class InsertRowActivity extends AppCompatActivity {
 
-    ConstraintLayout myLayout;
-    AnimationDrawable animationDrawable;
+   // ConstraintLayout myLayout;
+    //AnimationDrawable animationDrawable;
 
     private TextView mUserName;
     private TextView mUserPhone;
@@ -31,15 +32,17 @@ public class InsertRowActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
         setContentView(R.layout.activity_insert_row);
 
+        /*
         myLayout=(ConstraintLayout)findViewById(R.id.myLayout);
         animationDrawable=(AnimationDrawable)myLayout.getBackground();
         animationDrawable.setEnterFadeDuration(4500);
         animationDrawable.setExitFadeDuration(4500);
         animationDrawable.start();
 
-
+*/
 
 
 

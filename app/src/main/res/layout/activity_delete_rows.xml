@@ -51,7 +51,7 @@
         android:layout_height="24dp"
         android:layout_marginTop="4dp"
         android:layout_marginBottom="35dp"
-        android:text="Remove Staff Members "
+        android:text="@string/janitha_remove_staff_members"
         android:textColor="#D5FFFFFF"
         app:layout_constraintBottom_toTopOf="@+id/listviewdeleteID"
         app:layout_constraintEnd_toEndOf="parent"

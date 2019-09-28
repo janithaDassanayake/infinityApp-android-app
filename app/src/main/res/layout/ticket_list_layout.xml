@@ -22,7 +22,7 @@
                 android:layout_height="wrap_content"
                 android:padding="8dp"
                 android:id="@+id/textViewCode"
-                android:text="CODE"
+                android:text="@string/janith_code"
                 android:textSize="18dp">
 
             </TextView>
@@ -33,7 +33,8 @@
                 android:layout_height="wrap_content"
                 android:padding="8dp"
                 android:id="@+id/textViewType"
-                android:text="Type"
+                android:text="@string/janith_type"
+
 
                 android:layout_margin="10dp"
                 android:textSize="18dp">

@@ -1,11 +1,14 @@
 package com.example.infinityapp;
 
 import android.content.Intent;
+import android.content.pm.ActivityInfo;
+import android.graphics.drawable.AnimationDrawable;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.constraintlayout.widget.ConstraintLayout;
 
 import com.google.firebase.auth.FirebaseAuth;
 
@@ -14,12 +17,16 @@ public class MuserMyaccount extends AppCompatActivity {
     private Button edit;
     private Button signout;
 
+
     private FirebaseAuth firebaseAuth;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
         setContentView(R.layout.activity_muser_myaccount);
+
+
 
 
         edit=findViewById(R.id.btnedit);

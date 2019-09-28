@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bk"
+    tools:context=".MovieReview">
+
+
+    <EditText
+        android:id="@+id/NameS"
+        android:layout_width="258dp"
+        android:layout_height="45dp"
+
+        android:layout_marginStart="77dp"
+        android:layout_marginTop="122dp"
+        android:layout_marginEnd="76dp"
+        android:background="#FFFFFF"
+        android:backgroundTint="#FFFFFF"
+        android:hint="     enter movie name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/rating"
+        android:layout_width="256dp"
+        android:layout_height="46dp"
+
+
+        android:layout_marginStart="77dp"
+        android:layout_marginTop="34dp"
+        android:layout_marginEnd="78dp"
+        android:background="#FFFFFF"
+        android:hint="     rate the movie out od 5"
+        android:shadowColor="#FFFEFE"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/NameS" />
+
+
+    <EditText
+        android:id="@+id/comment"
+        android:layout_width="257dp"
+        android:layout_height="188dp"
+        android:layout_marginStart="79dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="73dp"
+        android:background="#FFFFFF"
+        android:backgroundTint="#FDFFFFFF"
+        android:ems="10"
+        android:gravity="start|top"
+        android:inputType="textMultiLine"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rating" />
+
+    <Button
+        android:id="@+id/button_add"
+        android:layout_width="165dp"
+        android:layout_height="46dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginBottom="40dp"
+        android:background="#00BCD4"
+        android:text="add review"
+        app:layout_constraintBottom_toTopOf="@+id/button_delete"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/comment"
+        app:layout_constraintVertical_bias="0.8" />
+
+    <Button
+        android:id="@+id/button_viewAll"
+        android:layout_width="165dp"
+        android:layout_height="46dp"
+        android:layout_above="@+id/button_update"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="104dp"
+        android:layout_marginEnd="31dp"
+        android:background="#669900"
+        android:text="view all"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/button_add"
+        app:layout_constraintTop_toBottomOf="@+id/comment" />
+
+    <Button
+        android:id="@+id/button_update"
+        android:layout_width="165dp"
+        android:layout_height="46dp"
+        android:layout_below="@+id/button_add"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginBottom="89dp"
+        android:background="#FF4444"
+        android:text="update Review"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_viewAll"
+        app:layout_constraintVertical_bias="0.866" />
+
+    <Button
+        android:id="@+id/button_delete"
+        android:layout_width="165dp"
+        android:layout_height="46dp"
+        android:layout_below="@+id/button_viewAll"
+        android:layout_alignStart="@+id/button_viewAll"
+        android:layout_alignLeft="@+id/button_viewAll"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="34dp"
+
+        android:layout_marginBottom="92dp"
+        android:background="#AA66CC"
+        android:text="delete Review"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/button_update"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/reviewID"
+        android:layout_width="256dp"
+        android:layout_height="46dp"
+
+        android:layout_marginStart="77dp"
+        android:layout_marginTop="44dp"
+
+        android:layout_marginEnd="78dp"
+        android:background="#FFFFFF"
+        android:backgroundTint="#FDFFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

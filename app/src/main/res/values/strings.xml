@@ -33,6 +33,13 @@
     <string name="BlockUser">Block Users</string>
     <string name="FinDUSer">Find Users</string>
     <string name="Find_user">Enter name of the user</string>
+    <string name="janitha_remove_staff_members">Remove Staff Members</string>
+    <string name="janith_next_btn">next</string>
+    <string name="janith_back_btn">back</string>
+    <string name="janith_staff_member_details">Staff Member Details</string>
+    <string name="janith_x">x</string>
+    <string name="janith_code">CODE</string>
+    <string name="janith_type">Type</string>
 
 
     <!--Malidi's resources files -->
@@ -130,6 +137,7 @@
     <string name="sep_30_sat">SEP 30 SAT</string>
     <string name="oct_01_sun">OCT 01 SUN</string>
     <string name="confirm">Confirm</string>
+
 </resources>
 
 

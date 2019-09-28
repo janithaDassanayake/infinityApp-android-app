@@ -47,7 +47,7 @@
         android:layout_weight="1"
         android:background="@null"
         android:onClick="deleteListRow"
-        android:text="x"
+        android:text="@string/janith_x"
         android:textColor="#FFC107"
         android:textSize="18sp" />
 </LinearLayout>

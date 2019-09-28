@@ -9,7 +9,7 @@ import android.widget.Button;
 
 public class HomePage extends AppCompatActivity {
 
-    Button btn, buybtn;
+    Button btn, buybtn ,addreview;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -18,6 +18,7 @@ public class HomePage extends AppCompatActivity {
 
         btn=findViewById(R.id.myaccount);
         buybtn=findViewById(R.id.buyTicketbtn);
+        addreview=findViewById(R.id.addreview);
     }
 
 
@@ -30,6 +31,16 @@ public class HomePage extends AppCompatActivity {
             public void onClick(View view) {
 
                 Intent i=new Intent(HomePage.this,MuserMyaccount.class);
+
+                startActivity(i);
+            }
+        });
+
+        addreview.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                Intent i=new Intent(HomePage.this,MovieReview.class);
 
                 startActivity(i);
             }

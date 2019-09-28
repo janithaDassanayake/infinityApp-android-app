@@ -4,38 +4,17 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/jani_bg_animation"
+    android:background="@drawable/bk"
     android:id="@+id/myLayout"
 
     tools:context=".MainActivity">
 
-    <View
-        android:id="@+id/view2"
-        android:layout_width="0dp"
-        android:layout_height="207dp"
-        android:background="#10102A"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <ImageView
-        android:id="@+id/imageView9"
-        android:layout_width="204dp"
-        android:layout_height="62dp"
-        android:layout_marginTop="4dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/kj" />
-
     <ImageView
         android:id="@+id/imageView12"
-        android:layout_width="266dp"
-        android:layout_height="131dp"
+        android:layout_width="271dp"
+        android:layout_height="94dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView9"
         app:srcCompat="@drawable/kl" />
@@ -44,11 +23,11 @@
         android:id="@+id/deleteRow"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="44dp"
-        android:layout_marginEnd="60dp"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="64dp"
         android:onClick="deleteRowActivity"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/view2"
+        app:layout_constraintTop_toBottomOf="@+id/imageView12"
         app:srcCompat="@drawable/user2" />
 
     <ImageView
@@ -68,8 +47,8 @@
         android:id="@+id/truncateTable"
         android:layout_width="102dp"
         android:layout_height="92dp"
-        android:layout_marginEnd="60dp"
-        android:layout_marginBottom="90dp"
+        android:layout_marginEnd="56dp"
+        android:layout_marginBottom="116dp"
         android:onClick="truncateTable"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -80,7 +59,7 @@
         android:layout_width="94dp"
         android:layout_height="93dp"
         android:layout_marginStart="60dp"
-        android:layout_marginBottom="90dp"
+        android:layout_marginBottom="116dp"
         android:onClick="goTOQRscaner"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -91,10 +70,12 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="60dp"
-        android:layout_marginTop="44dp"
+        android:layout_marginTop="54dp"
+        android:layout_marginEnd="99dp"
         android:onClick="insertRowActivity"
+        app:layout_constraintEnd_toStartOf="@+id/deleteRow"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/view2"
+        app:layout_constraintTop_toBottomOf="@+id/imageView12"
         app:srcCompat="@drawable/user1" />
 
     <ImageView
@@ -109,6 +90,16 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/insertRow"
         app:srcCompat="@drawable/user4" />
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="324dp"
+        android:layout_height="85dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.666"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ii3" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

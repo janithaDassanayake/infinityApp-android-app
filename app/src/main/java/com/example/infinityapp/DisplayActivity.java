@@ -1,8 +1,11 @@
 package com.example.infinityapp;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.constraintlayout.widget.ConstraintLayout;
 
+import android.content.pm.ActivityInfo;
 import android.database.Cursor;
+import android.graphics.drawable.AnimationDrawable;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
@@ -12,13 +15,25 @@ import com.example.infinityapp.UsersDatabaseAdapter;
 
 public class DisplayActivity extends AppCompatActivity {
 
+    /*
+    ConstraintLayout myLayout;
+    AnimationDrawable animationDrawable;*/
     Cursor res;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
         setContentView(R.layout.activity_display);
 
+/*
+        myLayout=(ConstraintLayout)findViewById(R.id.myLayout);
+        animationDrawable=(AnimationDrawable)myLayout.getBackground();
+        animationDrawable.setEnterFadeDuration(4500);
+        animationDrawable.setExitFadeDuration(4500);
+        animationDrawable.start();
+
+*/
 
         UsersDatabaseAdapter myDb= new UsersDatabaseAdapter(this);
 

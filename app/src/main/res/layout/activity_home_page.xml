@@ -4,18 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/bk"
     tools:context=".HomePage">
-
-    <ImageView
-        android:id="@+id/imageView6"
-        android:layout_width="433dp"
-        android:layout_height="736dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.6"
-        app:srcCompat="@drawable/a" />
 
     <Button
         android:id="@+id/myaccount"
@@ -41,4 +31,14 @@
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/myaccount" />
+
+    <Button
+        android:id="@+id/addreview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="add review"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buyTicketbtn" />
 </androidx.constraintlayout.widget.ConstraintLayout>

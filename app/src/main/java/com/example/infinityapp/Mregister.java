@@ -2,6 +2,7 @@ package com.example.infinityapp;
 
 import android.content.Context;
 import android.content.Intent;
+import android.content.pm.ActivityInfo;
 import android.graphics.drawable.AnimationDrawable;
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -24,8 +25,8 @@ import com.google.firebase.database.FirebaseDatabase;
 
 public class Mregister extends AppCompatActivity {
 
-    ConstraintLayout myLayout;
-    AnimationDrawable animationDrawable;
+    //ConstraintLayout myLayout;
+    //AnimationDrawable animationDrawable;
 
     private TextView reglogin;
 
@@ -43,14 +44,16 @@ public class Mregister extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
         setContentView(R.layout.activity_mregister);
 
+        /*
         myLayout=(ConstraintLayout)findViewById(R.id.myLayout);
         animationDrawable=(AnimationDrawable)myLayout.getBackground();
         animationDrawable.setEnterFadeDuration(4500);
         animationDrawable.setExitFadeDuration(4500);
         animationDrawable.start();
-
+*/
 
         setViews();
 
